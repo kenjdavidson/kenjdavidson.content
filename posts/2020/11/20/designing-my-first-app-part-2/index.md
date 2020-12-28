@@ -4,8 +4,9 @@ categories: [Project]
 title: Standardbred Mobile - Framework Selection Process - Part 2
 summary: Continuing the journey of how I created my first React Native App
 tags: [React Native, Android, IOS]
-series: Designing My First React Native App
-order: 2
+series: 
+  title: Designing My First React Native App
+  order: 2
 ---
 
 If you made it through [part 1](/writing/2020/01/03/designing-my-first-app-part-1) (I'm aware it's been forever since then; but this has been drafted, just never released) you'll remember that after a bunch of decision making the final choices were:

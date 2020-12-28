@@ -2,12 +2,15 @@
 type: Timeline
 categories: [CV]
 subcategory: Education
-title: Ryerson University
-subtitle: Bachelor of Computer Science
+school:
+  name: Ryerson University
+  website: https://www.ryerson.ca/cs/
+  twitter: "@RyersonU"
+degree: Bachelor of Computer Science
 start:
   year: 1999
   month: Sep
-end: 
+end:
   year: 2003
   month: Apr
 ---

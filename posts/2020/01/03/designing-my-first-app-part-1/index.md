@@ -4,8 +4,9 @@ categories: [Project]
 title: Standardbred Mobile - Framework Selection Process - Part 1
 description: Walking through my development of Standardbred Mobile App from design to release.
 tags: [React Native, Android, IOS]
-series: Designing My First React Native App
-order: 1
+series: 
+  title: Designing My First React Native App
+  order: 1
 ---
 
 
