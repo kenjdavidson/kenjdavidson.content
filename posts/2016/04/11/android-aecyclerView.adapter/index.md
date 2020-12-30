@@ -1,7 +1,7 @@
 ---
 type: Blog
 title: Android RecyclerView. Adapter implements Filterable
-summary: Walk through of how I added filter functionality to my Wingapedia app using RecyclerView.
+summary: A quick little walk through of how I added filter functionality to my Wingapedia app using Android's RecyclerView.Adapter and Filterable.
 categories: [Blog]
 tags: [Java, Android]
 ---
@@ -10,10 +10,10 @@ While working with the `RecyclerView.Adapter` while building my Wingapedia Andro
 
 ```java
 public class Flavour {
-  protected String name; 
-  protected String description; 
-  protected boolean isBbq; 
-  protected boolean isGarlic; 
+  protected String name;
+  protected String description;
+  protected boolean isBbq;
+  protected boolean isGarlic;
 
   // Setters and getters oh my
 }
@@ -31,7 +31,7 @@ public class FlavourFilter extends Filter {
       }
     }
   }
- 
+
   @Override
   protected void publishResults(CharSequence constraint, FilterResults results) {
     // Use mFilteredList to update mItems
@@ -39,7 +39,7 @@ public class FlavourFilter extends Filter {
 }
 ```
 
-This is all well and good for Filters which only search by name and description, but what if we need to pass in and filter on more options within the item?  We need to either pass in:
+This is all well and good for Filters which only search by name and description, but what if we need to pass in and filter on more options within the item? We need to either pass in:
 
 - The full object to perform testing based on all (or some) fields.
 - A byte array used to determine whether flags are on or off.
@@ -51,7 +51,7 @@ In this particular case I (update: sadly) decided that it would be a good idea t
 - `temperatureFlag` which is the byte flags of temperatures selected.
 - `tagList` which is a list of flavour tags.
 
-All of which are combined to filter the appropriate list.  The `performFiltering` method gets replaced with:
+All of which are combined to filter the appropriate list. The `performFiltering` method gets replaced with:
 
 ```java
 @Override
@@ -126,8 +126,8 @@ The filtered list is now combined with the three lookups that were required: sea
 
 #### P.S ~ May 2017
 
-With a combination of All Star Wings going out of business (at least near me) and Google Play requiring a privacy policy (which I didn't have time nor interest in writing) **Wingapedia** has sadly been removed from the store.  
+With a combination of All Star Wings going out of business (at least near me) and Google Play requiring a privacy policy (which I didn't have time nor interest in writing) **Wingapedia** has sadly been removed from the store.
 
-#### P.P.S ~ Jan 2018 
+#### P.P.S ~ Jan 2018
 
-I've had some interest come up in bringing this app back online, although making it customizable for the food industry.  I'll probably look into bringing this back up using React Native or Flutter.
+I've had some interest come up in bringing this app back online, although making it customizable for the food industry. I'll probably look into bringing this back up using React Native or Flutter.

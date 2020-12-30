@@ -15,6 +15,6 @@ end:
   month: Oct
 ---
 
-The operations team was responsible for customer review, development and implementation. I was asked to make the switch in order to provide a younger team with guidence on their processes. I was also responsible for taking over any long running 'dog' projects or projects for higher profile customers.
+Eventually I was asked to transition to the Operations team. My experience in working with customers and development allowed me to assist in training new hires and transitioning new projects. On top of this, I was responsible for handling some of the longer running and over budget projects - my ability to quickly discuss, document and developm (changes) allowed me to close these projects off more quickly than going through the regular process.
 
-I also started working more closely with the product managers with regards to updating the design and technology backing the Web and IVR software. We were also starting to design a new fixed route and paratransit mobile app - which I had the opportunity to help design and develop.
+I also started working more closely with the product managers with regards to updating the design and technology backing the **Web**, **IVR** and **Mobile Application**.

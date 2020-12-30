@@ -3,7 +3,9 @@ type: Blog
 categories: [Blog]
 subcategory:
 title: MyBatipse XML Generate ResultSet from JPA Annotations
-description: Expanding upon the MyBatipse source generation to speed up result set generation.
+summary:
+  My new company, Standardbred Canada, uses Mybatis to manage their Data Access.  After getting used to the environment I found
+  I needed a better/faster way to write mapper files.  I was able to throw together a JPA backed mapping plugin for Eclipse.
 tags: [Eclipse, Mybatis, JPA]
 ---
 
@@ -11,9 +13,9 @@ tags: [Eclipse, Mybatis, JPA]
 Validation
 Generation
 Tools
-while working with Mybatis XML files.   When I started at [Standardbred Canada](https://www.standardbredcanada.org) the DB library of choice was Mybatis (which I'd never used before) but quickly started to love it.  
+while working with Mybatis XML files. When I started at [Standardbred Canada](https://www.standardbredcanada.org) the DB library of choice was Mybatis (which I'd never used before) but quickly started to love it.
 
-> The primary reason that MyBatis was chosen due to it's ability to map legacy tables to updated domain models with ease.  In order to quickly replicate the legacy functionality, the ability to write XML based SQL was a requirement.
+> The primary reason that MyBatis was chosen due to it's ability to map legacy tables to updated domain models with ease. In order to quickly replicate the legacy functionality, the ability to write XML based SQL was a requirement.
 
 The primary feature that I started using was **Result Map generation** option.
 
@@ -21,7 +23,7 @@ The primary feature that I started using was **Result Map generation** option.
 
 ## Review of MyBatipse Feature
 
-The functionality was pretty basic, it would reflectively inspect the domain model fields, and create the result mapping for this item.   One of the major problems was, that this did a direct mapping of name to column, which in our case (and most cases) wasn't generally the case.  For example, if the object I was attempting to query was:
+The functionality was pretty basic, it would reflectively inspect the domain model fields, and create the result mapping for this item. One of the major problems was, that this did a direct mapping of name to column, which in our case (and most cases) wasn't generally the case. For example, if the object I was attempting to query was:
 
 ```java
 public class Address {
@@ -47,19 +49,19 @@ the issue is that our tables are defined a little differently:
 select ad_addr1, add_addr2, ... from address
 ```
 
-the `resultMap` still required a bunch of manual edits.  I could choose to either update the SQL to include aliases matching the Java `Address` but that would get hectic when working with collections and associations.   
+the `resultMap` still required a bunch of manual edits. I could choose to either update the SQL to include aliases matching the Java `Address` but that would get hectic when working with collections and associations.
 
 ## JPA Annotations
 
 I figured it would be easier to add JPA annotations to my domain models, as this would provide:
 the ability to maybe switch away from MyBatis down the road
 in source documentation for easy lookup (until this point columns were "documented" by appending `private String address; // ad_addr1` 🙁
-Plus it would give me a chance to take a look at how and what MyBatipse was doing - and learning something new is never bad.   This is still a work in progress, it's crude and I want to make it better before submitting a pull request [https://github.com/kenjdavidson/mybatipse/tree/jpa-mapping](https://github.com/kenjdavidson/mybatipse/tree/jpa-mapping).
+Plus it would give me a chance to take a look at how and what MyBatipse was doing - and learning something new is never bad. This is still a work in progress, it's crude and I want to make it better before submitting a pull request [https://github.com/kenjdavidson/mybatipse/tree/jpa-mapping](https://github.com/kenjdavidson/mybatipse/tree/jpa-mapping).
 
 When installing and using this version of MyBatipse you have the following available:
 
 ```java
-@Entity 
+@Entity
 @Table(name="address")
 public class Address {
     @Id
@@ -69,7 +71,7 @@ public class Address {
     @Column(name="ad_addr1")
     private String address1;
 
-    @Column(name="ad_addr2") 
+    @Column(name="ad_addr2")
     private String address2;
 
     ....
@@ -87,15 +89,15 @@ which would be extracted to:
 </resulMap>
 ```
 
-As we can see, the resultMap is now updated with the appropriate column names.  No more editing of resultMaps (at least for simple maps that is).
+As we can see, the resultMap is now updated with the appropriate column names. No more editing of resultMaps (at least for simple maps that is).
 
 #### Collections and Associations
 
-There's still work that needs to be done in order to get Collections and Associations working properly.   On a basic level they work well - but to allow for some best practices I've noticed - we need to provide **aliases** and **prefixes** to the result map entries.
+There's still work that needs to be done in order to get Collections and Associations working properly. On a basic level they work well - but to allow for some best practices I've noticed - we need to provide **aliases** and **prefixes** to the result map entries.
 
 ## SQL Statement Column Generation
 
-Another added feature was the ability to create `<sql>` blocks containing the columns for INSERT, UPDATE and SELECT statements.   The following menu features are available when working with a `<resultMap>`:
+Another added feature was the ability to create `<sql>` blocks containing the columns for INSERT, UPDATE and SELECT statements. The following menu features are available when working with a `<resultMap>`:
 `Source > ResultMap SQL > Select columns`
 `Source > ResultMap SQL > Insert columns`
 `Source > ResultMap SQL > Update columns`
@@ -103,7 +105,7 @@ which will create the appropriate SQL blocks (respectively):
 
 ```xml
 <sql id="addressMapSelectColumns>
-    ad_addr1, 
+    ad_addr1,
     ad_addr2,
     ...
 </sql>
@@ -111,7 +113,7 @@ which will create the appropriate SQL blocks (respectively):
 
 ```xml
 <sql id="addressMapInsertColumns>
-    (ad_addr1, 
+    (ad_addr1,
     ad_addr2,
     ...)
     values (#{address1},
@@ -123,7 +125,7 @@ which will create the appropriate SQL blocks (respectively):
 
 ```xml
 <sql id="addressMapUpdateColumns>
-    ad_addr1 = #{address1}, 
+    ad_addr1 = #{address1},
     ad_addr2 = #{address2},
     ...
 </sql>
@@ -140,14 +142,14 @@ which can easily be used:
 
 ```xml
 <insert id="insertAddress" parameterType="Address">
-    insert into address 
+    insert into address
     <include ref="addressMapInsertColumns" />
 </insert>
 ```
 
 ```xml
 <insert id="updateAddress" parameterType="Address">
-    update address 
+    update address
     set <include ref="addressMapUpdateColumns" />
     where ...
 </insert>
@@ -159,18 +161,18 @@ I'm currently using this in my day-to-day, but there are some things that need t
 
 ### Handling Class Extension with Prefixes
 
-For example, right now base classes are not handled well.   This probably won't affect many, but in our case our child objects contain prefixed column names in legacy, meaning that automating the `resultMap` still requires some manual intervention to update the column names coming from the parent object.
+For example, right now base classes are not handled well. This probably won't affect many, but in our case our child objects contain prefixed column names in legacy, meaning that automating the `resultMap` still requires some manual intervention to update the column names coming from the parent object.
 
 ```java
 public class Parent {
-    @Column(name="col1") 
+    @Column(name="col1")
     private String column1
 }
 
 public class Child extends parent {
     @Column(name="c_col2")
     private String column2;
-} 
+}
 ```
 
 this will result in Child result map:
@@ -193,7 +195,7 @@ where we actually want
 
 ### Collection and Association Mapping
 
-This is pretty crude at the moment.  It would be good if it could support:
+This is pretty crude at the moment. It would be good if it could support:
 Aliases
 Prefixes
 Etc.

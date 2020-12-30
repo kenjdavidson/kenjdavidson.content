@@ -2,11 +2,13 @@
 type: Blog
 categories: [Blog]
 title: No exports main resolved ... @babel/helper-compilation-targets/package.json
-summary: Node broke Gatsby and messed up my Github Actions 
+summary:
+  Looks like the latest version of Node broke my Gatsby Publish Action.   It's a good thing Google and Stack Overflow exist
+  and made life substantially easier than it could have been.
 tags: [Gatsby, Node, Github Actions]
 ---
 
-After the recent version of Node was released my Gatsby (as well as others) stopped building on Github.  To keep my site up to date (or at least up to date as it can be - I don't post a lot) I use a wonderful Github Action to publish - [enriikke/gatsby-gh-pages-action@v2](https://github.com/enriikke/gatsby-gh-pages-action).  Recently though the error started:
+After the recent version of Node was released my Gatsby (as well as others) stopped building on Github. To keep my site up to date (or at least up to date as it can be - I don't post a lot) I use a wonderful Github Action to publish - [enriikke/gatsby-gh-pages-action@v2](https://github.com/enriikke/gatsby-gh-pages-action). Recently though the error started:
 
 ```bash
 failed Building production JavaScript and CSS bundles - 1.468s
@@ -19,7 +21,7 @@ npm ERR! code ELIFECYCLE
 npm ERR! errno 1
 npm ERR! kenjdavidson.github.io@0.9.0 build: `gatsby build`
 npm ERR! Exit status 1
-npm ERR! 
+npm ERR!
 npm ERR! Failed at the kenjdavidson.github.io@0.9.0 build script.
 npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
 
@@ -28,7 +30,7 @@ npm ERR!     /home/runner/.npm/_logs/2020-08-19T14_12_53_132Z-debug.log
 ##[error]The process '/usr/local/bin/npm' failed with exit code 1
 ```
 
-This was due to the latest version of Node and the `@babel/helper-compilation-targets` dependency.  The primary way to resolve this was to update the `package-lock.json` so that it used the correct dependency versions.  But in my mind updating the lock file goes against the whole point of having the lock file.  The solution I chose was to update the Github Action to use the appropriate version of Node - until I had time to work through the entire set of dependencies and keeping the project whole.
+This was due to the latest version of Node and the `@babel/helper-compilation-targets` dependency. The primary way to resolve this was to update the `package-lock.json` so that it used the correct dependency versions. But in my mind updating the lock file goes against the whole point of having the lock file. The solution I chose was to update the Github Action to use the appropriate version of Node - until I had time to work through the entire set of dependencies and keeping the project whole.
 
 I updated my Github action to contain the following:
 
@@ -41,7 +43,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: ['12.16.3']
+        node-version: ["12.16.3"]
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     # - Checkout gatsby branch
@@ -60,7 +62,7 @@ jobs:
           access-token: ${{ secrets.ACCESS_TOKEN }}
 ```
 
-where the key lines are `node-version: ['12.16.3]`.  Pushing the build version back to the known good version required for these dependencies resolved the issue and allowed my site to once again be published.
+where the key lines are `node-version: ['12.16.3]`. Pushing the build version back to the known good version required for these dependencies resolved the issue and allowed my site to once again be published.
 
 #### Upgrading Node
 
