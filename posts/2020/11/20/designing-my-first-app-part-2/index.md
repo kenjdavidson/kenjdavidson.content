@@ -102,7 +102,7 @@ at a very high level, a screen containing multiple components would look like:
 </HorseLookupScreen>
 ```
 
-> Note - Another item that I wish I had started with while working - Styled Components. The current implementation is using the built in `StyleSheets` due to me >not wanting to add in too many things at one time. This was a bad move, the more I've been using React[Native], styled components makes things so much simpler.
+<blockquote class="info">Note - Another item that I wish I had started with while working - Styled Components. The current implementation is using the built in `StyleSheets` due to me >not wanting to add in too many things at one time. This was a bad move, the more I've been using React[Native], styled components makes things so much simpler.</blockquote>
 
 #### Navigation
 
