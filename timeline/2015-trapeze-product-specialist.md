@@ -1,6 +1,6 @@
 ---
 type: Timeline
-categories: [CV]
+category: Resume
 subcategory: Experience
 company:
   name: Trapeze Group

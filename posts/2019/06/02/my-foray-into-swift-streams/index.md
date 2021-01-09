@@ -4,7 +4,7 @@ title: For my first IOS project, why not start with Streams!
 summary:
   While developting my companies mobile application I needed to write a custom library for IOS to allow Bluetooth Classic scanning.
   Why not jump directly into Swift streams as my first (ever) IOS project.  What could go wrong?
-categories: [Blog]
+category: Technology
 tags: [Swift, React Native]
 ---
 

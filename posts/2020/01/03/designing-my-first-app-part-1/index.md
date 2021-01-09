@@ -1,6 +1,6 @@
 ---
 type: Blog
-categories: [Project]
+category: Project
 title: Standardbred Mobile - Framework Selection Process - Part 1
 summary:
   Tasked with designing and developing Standardbred Canada's microchip scanning app; I wanted to document the process from

@@ -1,6 +1,6 @@
 ---
 type: Blog
-categories: [Blog]
+category: Technology
 title: No exports main resolved ... @babel/helper-compilation-targets/package.json
 summary:
   Looks like the latest version of Node broke my Gatsby Publish Action.   It's a good thing Google and Stack Overflow exist

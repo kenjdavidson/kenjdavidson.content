@@ -1,6 +1,6 @@
 ---
 type: Blog
-categories: [Blog]
+category: Technology
 title: Zero to TypeScript in ... I'll let you know when it's done.
 summary:
   So I've been disliking Javascript for a while now, I won't lie - but I understand necessity.  Looks like it's time to give

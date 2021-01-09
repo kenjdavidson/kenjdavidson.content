@@ -4,7 +4,7 @@ title: Wordpress to Github Pages
 summary:
   To save a little bit of cash on GoDaddy hosting, as well as get some experience with Github Pages, I took the time move
   (and document the process) of that conversion.
-categories: [Blog]
+category: Technology
 tags: [Github Pages, Jekyll]
 ---
 

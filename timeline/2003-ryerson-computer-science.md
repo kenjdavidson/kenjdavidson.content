@@ -1,6 +1,6 @@
 ---
 type: Timeline
-categories: [CV]
+category: Resume
 subcategory: Education
 school:
   name: Ryerson University

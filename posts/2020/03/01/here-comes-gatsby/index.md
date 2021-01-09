@@ -4,7 +4,7 @@ title: Goodbye Jekyll, Hello Gatsby!!
 summary:
   Welp... Jekyll didn't last long.  I know it seems fickle, but after playing around with Jekyll for a while (I just wasn't a fan).
   Check out how I go about, yet another conversion, to Gatsby.
-categories: [Blog]
+category: Technology
 tags: [Gatsby, React]
 ---
 

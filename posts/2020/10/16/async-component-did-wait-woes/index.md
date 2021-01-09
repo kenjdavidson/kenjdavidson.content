@@ -1,6 +1,6 @@
 ---
 type: Blog
-categories: [Blog]
+category: Technology
 title: await and componentDidMount woes
 summary:
   While converting React Native Bluetooth Classic to Typescript I ran into some issues with componentDidMount and await.

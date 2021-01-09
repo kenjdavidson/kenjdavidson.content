@@ -1,6 +1,6 @@
 ---
 type: Blog
-categories: [Blog]
+category: Technology
 title: Typescript React Native with Jest
 summary:
   Still going down the Typescript conversion of React Native Bluetooth Classic it was time to get the library setup with

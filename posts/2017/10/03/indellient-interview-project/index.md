@@ -1,6 +1,6 @@
 ---
 type: Blog
-categories: [Blog]
+category: Technology
 title: Indellient Software Analyst Interview Project
 summary:
   When applying for a role developer/analyst role at Indellient Software, part of the application process was to write
