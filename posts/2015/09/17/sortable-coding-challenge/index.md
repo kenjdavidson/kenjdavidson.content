@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 title: Sortable Coding Challenge
 summary:
   A long time ago I was looking to get out of support and into a development role.  At this point I had education

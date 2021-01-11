@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 title: Android RecyclerView. Adapter implements Filterable
 summary: A quick little walk through of how I added filter functionality to my Wingapedia app using Android's RecyclerView.Adapter and Filterable.
 category: Technology

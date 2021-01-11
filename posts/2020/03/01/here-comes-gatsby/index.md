@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 title: Goodbye Jekyll, Hello Gatsby!!
 summary:
   Welp... Jekyll didn't last long.  I know it seems fickle, but after playing around with Jekyll for a while (I just wasn't a fan).

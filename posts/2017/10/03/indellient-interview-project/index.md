@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Technology
 title: Indellient Software Analyst Interview Project
 summary:

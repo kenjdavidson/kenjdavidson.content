@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 title: Wordpress plugin - Not allowed to access page
 summary: How I resolved the "not allowed to access page" error while developing a Wordpress plugin.
 category: Technology

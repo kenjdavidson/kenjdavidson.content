@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Technology
 title: Pusblish Gatsby with Github Actions
 summary:

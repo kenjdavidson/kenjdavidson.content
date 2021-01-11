@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Technology
 subcategory:
 title: Creating your OAuth2 token for Yahoo APIs within Postman

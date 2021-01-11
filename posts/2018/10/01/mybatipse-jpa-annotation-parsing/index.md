@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Technology
 subcategory:
 title: MyBatipse XML Generate ResultSet from JPA Annotations

@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Technology
 title: No exports main resolved ... @babel/helper-compilation-targets/package.json
 summary:

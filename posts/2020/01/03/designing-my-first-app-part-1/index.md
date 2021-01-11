@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Project
 title: Standardbred Mobile - Framework Selection Process - Part 1
 summary:

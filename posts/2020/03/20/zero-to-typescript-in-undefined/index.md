@@ -1,5 +1,5 @@
 ---
-type: Blog
+type: Post
 category: Technology
 title: Zero to TypeScript in ... I'll let you know when it's done.
 summary:
