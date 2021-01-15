@@ -13,7 +13,7 @@ I won't spend much time on the negative, we've all experiened it and we've all c
 
 ## Health & Fitness
 
-Putting this first isn't meant to take away from how much Carson has accomplished in school, nor how much Sue has accomplished at work; it's just that 2020 has been a pretty solid year for me committing to my goals of getting in shape, and I'm pretty damned proud. In late 2019 I made a decision (after running out or breath carrying Carson upstairs) that I would commit to:
+Putting this first isn't meant to take away from how much Carson has accomplished in school; nor how much Sue has accomplished at work; it's just that 2020 has been a pretty solid year for me committing to my goals of getting in shape, and I'm pretty damned proud. In late 2019 I made a decision (after running out or breath carrying Carson upstairs) that I would commit to:
 
 - Losing some weight
 - Getting better cardio
@@ -76,30 +76,47 @@ Although I continued to refrain from:
 
 and I'm currently sitting around **180**, and I'm thrilled about it!
 
-## Sue & Carson
+## Family
 
-As proud as I am of myself... Sue and Carson have blown me out of the water this year!
+In the grand scheme of 2020 I think we've been pretty lucky with how things have gone.  When covid first went down in March we were concerned about how things would turn out.   We ended up picking corners of the house; Sue was in the kitchen while while I was in the dining room, it worked well but it definitely wasn't opimal.  
 
-### Sue
+Carson not being in daycare/school was problematic, trying to keep a 4 year old busy during the day (enough to ensure he's tired enough to sleep) is difficult.  The most difficult thing was attempting to get some time outside while keeping him off play grounds; even more so trying to explain why some people were still playing on them (when they shouldn't have been).  I couldn't imagine going through this type of thing when I was a kid, but he took it well (enough).
 
-### Carson
+Sue and I were able to split most of the days well; but more often than not I spend most of the day playing and most of the evening working.  It wasn't the greatest situation - I wouldn't say I'm a workaholic but I'm super anxious about whether I'm completing my work to the standard that is expected of me, regardless of the times.  
 
-As hard as Covid is for adults, it's got to be a complete nightmare for kids; they don't understand what's going on, they just know that people seem more worried and there are so many new rules to follow (that just don't make any sense to them).
+### School Started
+
+This was Carson's first year at school.  We decided that even with all the Covid worries around us that his school (we decided on private) was safe enough, and that if we were going to continue to survive mentally, he'd be going in.   We decided to enroll Carson in a private school - we figured that we might as well go all in on the one we have - and oh man what a great decision.
+
+The structure and the speed at which he's learning (they're teaching) is shocking.  
+
+(I'm aware this is a year in review for 2020) Carson, like all kids, are at home now learning - and it's terrible.  I'm sure it's terrible for everyone, and I can't even imagine how teacher [parents] are doing it.  I'm generally pretty hard on teachers, I won't lie about it, but man you're all doing a spectacular job with the resources and rules that you've been given.
+
+### MBA Decisions
+
+I won't talk much about Sue, she probably won't even like this much;  but, this past year she decided to apply for her MBA at [Ivey](https://www.ivey.uwo.ca/), got in, and will be starting this year.  I'm sure next years review (if this continues) will be more of me possibly complaining about hard it was (for me, cause I'm selfish-ish) but **100%** worth it when I get to retire early and golf full time.  
+
+That's a thing, right?
 
 ## Employment
 
 Nothing, with regard to employment, changed in 2020. The team at [Standardbred Canada](https://www.standardbredcanada.ca) continues to roll through our conversion of legacy software. There are some pretty interesting things coming down the pipe for 2021 (but this is a year in review) so they don't mean much here.
 
-We've all been doing our best to keep things going forward with all the obsticles:
+At a high level some of the things we've been working through this past year:
 
-- Working from home
-- Rotating office shifts
-- Working from home
-- C.E.R.B
+- Continued development of our Gaitway application (migration from legacy)
+- Our new external website (Drupal) which will eventually be our primary customer portal
+- Migration from Ingres to Postgres
+- The discussions on Single Sign-on and migrating a number of our services
 
-which pretty much everyone has been dealing with; so no point stewing.
+Like almost everyone else, we've been (as mentioned) working from home since March.  I've never liked working from home, re: the anxiety that I feel around work, but I've started enjoy it more.   I've since moved from the dining room table up into the spare bedroom where I have a pseudo office setup.  
 
-I'm looking forward to another year, finishing off the Gaitway project, and starting on more of our mobile and use centric projects.
+- Sue picked me up a [stand up desk](https://www.ikea.com/ca/en/p/bekant-desk-sit-stand-black-stained-ash-veneer-black-s29282221/) from Ikea, which has been absolutely fantastic, I suggest that everyone gets one.
+- I'm still sitting on the dining room table though (when I'm not standing - about 50% of the time)
+
+Working from home has also afforded me the luxury of working out during the day.   I'll be completely honest, without working from home I just don't see  the latter half of my weight loss being as successful.  The most important and absolutely worst part of losing weight is being as strict as possible, and (I guess thankfully) due to Covid and the work situation I've been able to keep things extremely consisten.
+
+Here's to a solid 2021! **knock on wood**
 
 ## Side projects
 
