@@ -92,7 +92,7 @@ The components were broken up into two types:
 
 at a very high level, a screen containing multiple components would look like:
 
-```jsx
+```tsx
 <HorseLookupScreen>
   <Toolbar>
      <SearchText/>

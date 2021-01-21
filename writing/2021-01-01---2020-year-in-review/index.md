@@ -56,9 +56,7 @@ Another one of the biggest issues I had was that I hate posting about myself. I 
 
 Once you've suffered, and failed, and suffered, and failed... you'll get to the point where it becomes easier. You've gotten used to eating the same thing. You've gotten used to forcing yourself to workout when you'd rather just watch tv. Your friends have event stopped pressuring you to have **just one drink** when you're hanging out. This might take a week, or a month, however long it takes just keep on pushing through cause it will happen.
 
-From December to June I dropped from **205** to **169** which was 10lbs lower than my goal of **180**, so here's an obligatory shot!
-
-![2020 Weight Loss](./weight-loss.png "From 205 down to 180 and holding strong")
+From December to June I dropped from **205** to **169** which was 10lbs lower than my goal of **180**.
 
 ### Expected Regression
 
@@ -74,9 +72,13 @@ Although I continued to refrain from:
 - Breads
 - Most other sugar
 
-and I'm currently sitting around **180**, and I'm thrilled about it!
+![2020 Weight Loss](./weight-loss.png "From 205 down to 180 and holding strong")
+
+I'm currently sitting around **180**, and I'm thrilled about it! (Don't mind the unfinished shower)
 
 ## Family
+
+![Family Photo - from Sue](./family.png "Family Photo from Sue's insta!")
 
 In the grand scheme of 2020 I think we've been pretty lucky with how things have gone.  When covid first went down in March we were concerned about how things would turn out.   We ended up picking corners of the house; Sue was in the kitchen while while I was in the dining room, it worked well but it definitely wasn't opimal.  
 
@@ -120,7 +122,11 @@ Here's to a solid 2021! **knock on wood**
 
 ## Side projects
 
-I've been attempting to get more experience with **Javascript** and **Typescript** under my belt this year. I've always been open about my dislike of Javascript and other typeless languages - just a personal preference I guess - but I fully understand this is the way things work and that I've got to get on board. Typescript has definitely helped with that process, although I'm still finding some things hard to wrap my head around, it's going.
+### Javascript/Typescript
+
+I've been attempting to get more experience with **Javascript** and **Typescript** under my belt this year. I've always been open about my dislike of Javascript and other typeless languages - just a personal preference I guess - but I fully understand this is the way things work and that I've got to get on board. Typescript has definitely helped with that process, which is a positive.
+
+Besides the projects I've started over the last few years, I have another couple that I'd love to get started (when time permits)...
 
 ### My Personal Site (this guy)
 
