@@ -78,21 +78,38 @@ I'm currently sitting around **180**, and I'm thrilled about it! (Don't mind the
 
 ## Family
 
-![Family Photo - from Sue](./family.png "Family Photo from Sue's insta!")
-
 In the grand scheme of 2020 I think we've been pretty lucky with how things have gone.  When covid first went down in March we were concerned about how things would turn out.   We ended up picking corners of the house; Sue was in the kitchen while while I was in the dining room, it worked well but it definitely wasn't opimal.  
 
-Carson not being in daycare/school was problematic, trying to keep a 4 year old busy during the day (enough to ensure he's tired enough to sleep) is difficult.  The most difficult thing was attempting to get some time outside while keeping him off play grounds; even more so trying to explain why some people were still playing on them (when they shouldn't have been).  I couldn't imagine going through this type of thing when I was a kid, but he took it well (enough).
+<Box responsive direction="row-responsive">
+  <Box basis="2/3" >
+    <p>
+    Carson not being in daycare/school was problematic, trying to keep a 4 year old busy during the day (enough to ensure he's tired enough to sleep) is difficult.  The most difficult thing was attempting to get some time outside while keeping him off play grounds; even more so trying to explain why some people were still playing on them (when they shouldn't have been).  I couldn't imagine going through this type of thing when I was a kid, but he took it well (enough).
+    </p>
+  </Box>
+  <Box basis="1/3" pad="medium">
+    <img src="./family.png"></img>
+  </Box>
+</Box>
 
-Sue and I were able to split most of the days well; but more often than not I spend most of the day playing and most of the evening working.  It wasn't the greatest situation - I wouldn't say I'm a workaholic but I'm super anxious about whether I'm completing my work to the standard that is expected of me, regardless of the times.  
+Sue and I were able to split most of the days well; but more often than not I spend most of the day playing and most of the evening working.  It wasn't the greatest situation - I wouldn't say I'm a workaholic but I'm super anxious about whether I'm completing my work to the standard that is expected of me, regardless of the times.
+
 
 ### School Started
 
 This was Carson's first year at school.  We decided that even with all the Covid worries around us that his school (we decided on private) was safe enough, and that if we were going to continue to survive mentally, he'd be going in.   We decided to enroll Carson in a private school - we figured that we might as well go all in on the one we have - and oh man what a great decision.
 
-The structure and the speed at which he's learning (they're teaching) is shocking.  
+The structure and the speed at which he's learning (they're teaching) is shocking.  I don't remember what I went through in kindergarten but I definitely don't remember the:
 
-(I'm aware this is a year in review for 2020) Carson, like all kids, are at home now learning - and it's terrible.  I'm sure it's terrible for everyone, and I can't even imagine how teacher [parents] are doing it.  I'm generally pretty hard on teachers, I won't lie about it, but man you're all doing a spectacular job with the resources and rules that you've been given.
+- math
+- science
+- languages
+- and French (yup, an hour of French a day - not immersion)
+
+The only issue is the 4 year old attention span.   It definitely doesn't help that we're around watching (and in his mind just waiting to play) while he's supposed to be doing school work.
+
+#### Home Schooling 
+
+It's terrible.  I'm sure it's terrible for everyone, and I can't even imagine how teachers [parents] are doing it.  I'm generally pretty hard on teachers, I won't lie about it, but man you're all doing a spectacular job with the resources and rules that you've been given.
 
 ### MBA Decisions
 
@@ -140,7 +157,7 @@ This last year I took the time to convert the library completely to Typescript. 
 
 For more information check out [React Native Bluetooth Classic](https://www.kenjdavidson.com/react-native-bluetooth-classic).
 
-### Git Golf Gps
+### Caddieasy
 
 I've been trying to become a contributor on the wonderful project [Smart Watch Golf Gps](https://smartwatchgolfgps.com/) to no avail. For that reason I've decided that I could probably just start on my own version, allowing me to:
 
