@@ -6,6 +6,6 @@ page: Technical Details
 order: 3
 ---
 
-Yes.  
+Yup, [Bitmojis](https://www.bitmoji.com/) are one of my online [guilty pleasures](https://en.wikipedia.org/wiki/Guilty_pleasure).  I'm only somewhat ashamed to admit it!
 
-I'm a 40 year old man who thinks Bitmoji's are absolutely ridiculous.  With that said, it's super sad that their a part of Snapchat (since I can't stand that) but we can't always win.
+Don't judge!

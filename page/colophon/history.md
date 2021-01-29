@@ -6,7 +6,7 @@ page: Technical Details
 order: 4
 ---
 
-This site has seen many iterations.  Sadly I didn't have the foresight to include previous versions and make them available here.  At any rate, there is a brief history:
+This site has seen many iterations.  Sadly, I didn't have the foresight to include previous versions and make them available here.  At any rate, there is a brief history:
 
 #### 2020 Github & Gatsby
 
@@ -18,9 +18,9 @@ While working through the theming process I decided to give my own a shot (again
 - [Playfair Display](https://fonts.google.com/specimen/Playfair+Display) and [Merriweather Light](https://fonts.google.com/specimen/Merriweather) Google fonts.
 - [FontAwesome Icons](https://fontawesome.com/) for the obvious.
 
-Again, what a chance to pad the [articles](https://www.kenjdavidson.com/writing/2020/03/01/here-comes-gatsby/).
+Another chance to pad the [articles](https://www.kenjdavidson.com/writing/2020/03/01/here-comes-gatsby/).
 
-#### 2019 Github & Jekyll
+### 2019 Github & Jekyll
 
 In 2019 I decided that I spent enough money on GoDaddy and enough time trying to get into PHP; so it was time for a change!  I had been reading about [Gitub Pages](https://pages.github.com/) and [Jekyll](https://jekyllrb.com/); I figured like it would be a solid (and free - although I current subscribe for Github now anyhow) choice.  This time I decided not to try and play around with my own theme - I ended up choosing a plain little theme [Lagom](https://github.com/swanson/lagom) by [Matt Swanson](https://mdswanson.com/).
 
@@ -33,7 +33,7 @@ So the added functionality got added in [Lagomier](https://github.com/kenjdavids
 
 Here's an [article](https://www.kenjdavidson.com/writing/2019/05/28/from-wordpress-to-github-pages/) about it.
 
-#### GoDaddy & Wordpress
+### Pre 2018 GoDaddy & Wordpress
 
 My first personal website (we'll leave [Geocities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) and [MySpace](https://myspace.com/) out of it) was a [Wordpress](https://www.wordpress.com) site hosted on [GoDaddy](https://www.godaddy.ca).   This site was (imagine this) pretty much the same layout this bad boy is now (the sidebar menu with 1/3 split, if that's still what it is); using a theme that I had attempted to build myself using [Bootstrap](https://getbootstrap.com).  My lack of design skills coupled with my distain for **PHP** made it not very pretty, and me not very active.  
 
