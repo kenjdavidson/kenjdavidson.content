@@ -1,10 +1,10 @@
 ---
+draft: true
 type: Post
 category: "Year In Review"
 title: The Gongshow that was 2020
 summary: It's been one heck of year!  Continuing in my attempt to document a little bit more about the things I've done (and I guess things I haven't done) it felt like a run down about my last year might be a great kickoff to continuing the process.
-tags: [Shopify, Zencart]
-draft: true
+tags: [Review, Health, Family, Work]
 ---
 
 So let's be serious, 2020 was a completes S@#% show! (I think we can all agree that throwning down a little profanity is justified)
@@ -74,7 +74,7 @@ Although I continued to refrain from:
 
 ![2020 Weight Loss](./weight-loss.png "From 205 down to 180 and holding strong")
 
-I'm currently sitting around **180**, and I'm thrilled about it! (Don't mind the unfinished shower)
+I'm currently sitting around **180**, and I'm thrilled about it! (Don't mind the unfinished shower).  I'm going to try to get a couple posts regarding the different exercise programs I've given a shot, their pros and cons, etc.
 
 ## Family
 
