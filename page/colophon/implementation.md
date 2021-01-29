@@ -16,4 +16,10 @@ The current implementation of the site is based upon:
 
 #### Grommet
 
-I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site, as there are some things that I've had to tip toe which I wasn't expecting.
+I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site.  There are a few things like:
+
+- Theming
+- Responsiveness (a bigger one)
+- and some other things
+
+That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
