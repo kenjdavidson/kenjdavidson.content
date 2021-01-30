@@ -20,6 +20,9 @@ I'll be completely honest - it looked cool and I do really like the library.  Bu
 
 - Theming
 - Responsiveness (a bigger one)
+- Anchors - which is a massive annoyance.  They don't work well with Gatsby, and require some magic wrapping to convert to `<Link/>` or injected with `navigate(href)` based on whether it's an internal link or not.  Without this, Gatsby becomes un-Gatsby and super annoying.
 - and some other things
 
 That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
+
+When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`).  We'll see, but at this point the positives don't outweight the negatives.

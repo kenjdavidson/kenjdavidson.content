@@ -17,7 +17,7 @@ If you made it through [part 1](/writing/2020/01/03/designing-my-first-app-part-
 - Redux
 - Axios
 
-With the requirement of creating a new Bluetooth native module that supported MFi (External Accessory) on IOS. I'll jump right into the application creation process - as the Bluetooth module requires it's own article (which can be found [here](https://kenjdavidson.com/2019-09-01-getting-started-with-sc-mobile).
+With the requirement of creating a new Bluetooth native module that supported MFi (External Accessory) on IOS. I'll jump right into the application creation process - as the Bluetooth module requires it's own article (which can be found [here](https://kenjdavidson.com/2019-09-01-getting-started-with-sc-mobile)).
 
 ## Creating the App
 
