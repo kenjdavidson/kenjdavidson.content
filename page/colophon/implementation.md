@@ -26,3 +26,7 @@ I'll be completely honest - it looked cool and I do really like the library.  Bu
 That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
 
 When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`).  We'll see, but at this point the positives don't outweight the negatives.
+
+#### Themes
+
+I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here.   Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
