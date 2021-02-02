@@ -26,3 +26,23 @@ I'll be completely honest - it looked cool and I do really like the library.  Bu
 That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
 
 When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`).  We'll see, but at this point the positives don't outweight the negatives.
+
+### Antd
+
+With the pain points I've mentioned, I have been researching other frameworks and I will probably try convert [Grommet](https://v2.grommet.io/) to [Antd](https://ant.design/).  It looks like it's got a much richer set of components - which more importantly contain the functionalty that I'm missing and don't particularly want to write myself into Grommet.
+
+The page template definitely isn't that difficult to replicate and I've gotten a working system of:
+
+#### `Posts`
+
+For writing/blog entries.
+
+#### `Timelines`
+
+For resume and education.
+
+#### `Pages` / `PageSections`
+
+Providing a method of describing and building pages externally from the `/src/` which I'm hoping to eventually just use as gatsby plugins.  
+
+
