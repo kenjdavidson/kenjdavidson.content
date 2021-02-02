@@ -14,7 +14,7 @@ The current implementation of the site is based upon:
 - Hosted on [Gitub Pages](https://pages.github.com/) as all great seem to be.
 - Styled using [Grommet](https://v2.grommet.io/), a React based library that (doesn't mesh 100% with Gatsby) provides some unique and useful functionality.  
 
-#### Grommet
+### Grommet
 
 I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site.  There are a few things like:
 
