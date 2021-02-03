@@ -30,3 +30,7 @@ When I get a chance, I see myself moving away form Grommet, back to `theme-ui` a
 #### Themes
 
 I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here.   Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
+
+- 4 `Cool and Fresh`
+- 12 `Striking and Simple`
+- 19 `Minimal Yet Warm`
