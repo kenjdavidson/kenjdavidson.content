@@ -14,7 +14,7 @@ The current implementation of the site is based upon:
 - Hosted on [Gitub Pages](https://pages.github.com/) as all great seem to be.
 - Styled using [Grommet](https://v2.grommet.io/), a React based library that (doesn't mesh 100% with Gatsby) provides some unique and useful functionality.  
 
-#### Grommet
+### Grommet
 
 I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site.  There are a few things like:
 
@@ -26,8 +26,29 @@ I'll be completely honest - it looked cool and I do really like the library.  Bu
 That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
 
 When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`).  We'll see, but at this point the positives don't outweight the negatives.
+### Antd
 
-#### Themes
+With the pain points I've mentioned, I have been researching other frameworks and I will probably try convert [Grommet](https://v2.grommet.io/) to [Antd](https://ant.design/).  It looks like it's got a much richer set of components - which more importantly contain the functionalty that I'm missing and don't particularly want to write myself into Grommet.
+
+The page template definitely isn't that difficult to replicate and I've gotten a working system of:
+
+### Project Planning
+
+I've been attempting to categorize the types of `Mdx` created based on the highest level categories:
+
+#### Posts
+
+Single serve `Mdx` files used to create full content articles.
+
+#### Timelines
+
+Single serve `Mdx` files used for individual education or experience content.
+
+#### Pages/Sections
+
+Pages and sections provide a consistent and extendable method of describing and building pages externally from the `/src/` which I'm hoping to eventually just use as gatsby plugins.  
+
+### Themes
 
 I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here.   Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
 

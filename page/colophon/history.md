@@ -8,7 +8,7 @@ order: 4
 
 This site has seen many iterations.  Sadly, I didn't have the foresight to include previous versions and make them available here.  At any rate, there is a brief history:
 
-#### 2020 Github & Gatsby
+### 2020 Github & Gatsby
 
 Around the same time I had started playing with [React](https://reactjs.org/) and [React Native](https://reactnative.dev/); although JavaScript has never been my favorite, I really started appreciating it and wanting to use it more.  Following the rabbit hole, that is the Internet, it quickly became apparent that [Gatsby](https://www.gatsbyjs.com/) was the next thing I had to get my hands on (the Lord of the Rings reference definitely didn't hurt).
 
