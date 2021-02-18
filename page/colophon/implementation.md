@@ -1,8 +1,7 @@
 ---
-type: Section
+type: PageSection
 title: Implementation
 summary: Language, framework and deployment used for the website
-page: Technical Details
 order: 1
 ---
 
@@ -14,6 +13,7 @@ The current implementation of the site is based upon:
 - Hosted on [Gitub Pages](https://pages.github.com/) as all great seem to be.
 - Styled using [Grommet](https://v2.grommet.io/), a React based library that (doesn't mesh 100% with Gatsby) provides some unique and useful functionality.  
 
+## Framework
 ### Grommet
 
 I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site.  There are a few things like:
@@ -32,26 +32,53 @@ With the pain points I've mentioned, I have been researching other frameworks an
 
 The page template definitely isn't that difficult to replicate and I've gotten a working system of:
 
-### Project Planning
+## Design & planning
 
 I've been attempting to categorize the types of `Mdx` created based on the highest level categories:
 
-#### Posts
+### Posts
 
 Single serve `Mdx` files used to create full content articles.
 
-#### Timelines
+### Timelines
 
 Single serve `Mdx` files used for individual education or experience content.
 
-#### Pages/Sections
+### Pages/Sections
 
 Pages and sections provide a consistent and extendable method of describing and building pages externally from the `/src/` which I'm hoping to eventually just use as gatsby plugins.  
 
-### Themes
+## Themes
 
 I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here.   Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
 
-- 4 `Cool and Fresh`
-- 12 `Striking and Simple`
-- 19 `Minimal Yet Warm`
+- **Cool and Fresh** (4)
+- **Striking and Simple** (12)
+- **Minimal Yet Warm** (19)
+
+> They don't provide links - so the numerical position in the list is the best I can provide.
+
+## Bitmoji
+
+Yup, [Bitmojis](https://www.bitmoji.com/) are one of my online [guilty pleasures](https://en.wikipedia.org/wiki/Guilty_pleasure).  I'm only somewhat ashamed to admit it!
+
+Don't judge!
+
+## Attribution
+
+### Fonts
+
+Fonts are providd by:
+
+
+
+### Icons
+
+Icons are provided by:
+
+- Standard [Grommet Icons](https://icons.grommet.io/).
+- Hand Symbol Icons made by [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev) from [Flat Icon](https://www.flaticon.com/).
+- Social Icons made by [Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect) from [Flat Icon](https://www.flaticon.com/).
+
+I'm currently working on getting the Flat Icons wrapped (webpack plugin) within the Grommet `<Blank/>` icon to provide the Grommet theme sizing to them throughout the site.
+

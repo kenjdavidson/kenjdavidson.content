@@ -1,12 +1,10 @@
 ---
 type: Timeline
-category: Resume
-subcategory: Experience
-company:
-  name: Trapeze Group
-  website: https://www.trapezegroup.com
-  twitter: "@trapezegroup"
-role: Senior Application Support Specialist
+category: Experience
+title: Senior Application Support Specialist
+subtitle: Trapeze Group
+website: https://www.trapezegroup.com
+twitter: "@trapezegroup"
 start:
   year: 2007
   month: Sep

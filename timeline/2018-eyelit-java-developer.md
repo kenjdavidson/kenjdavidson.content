@@ -1,12 +1,10 @@
 ---
 type: Timeline
-category: Resume
-subcategory: Experience
-company:
-  name: Eyelit Inc.
-  website: http://www.eyelit.com
-  twitter: "@@Eyelit_Inc"
-role: Java Developer / Analyst
+category: Experience
+title: Java Developer & Analyst
+subtitle: Eyelit Inc.
+website: http://www.eyelit.com
+twitter: "@Eyelit_Inc"
 start:
   year: 2015
   month: Oct
@@ -14,6 +12,7 @@ end:
   year: 2018
   month: Jul
 ---
+
 
 I finally crossed the line from support/analyst to full time developer, working with custom development used in the integration of Eyelit MES to client environments. This included, but was not limited to, custom communication modules using [RabbitMQ](https://www.rabbitmq.com/),[SECS/Gem](https://en.wikipedia.org/wiki/SECS/GEM), plain old REST over HTTP (along with some others). Some other interesting projects I was included on:
 

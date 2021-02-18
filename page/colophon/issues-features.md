@@ -1,8 +1,7 @@
 ---
-type: Section
+type: PageSection
 title: Issues & Features
 summary: I accept it will never be perfect
-page: Technical Details
 order: 5
 ---
 

@@ -1,16 +1,16 @@
 ---
 type: Timeline
-category: Resume
-subcategory: Experience
-company:
-  name: Standardbred Canada
-  website: https://www.standardbredcanada.ca
-  twitter: "@StandardbredCAN"
-role: Senior Java Developer
+category: Experience
+title: Senior Java Developer
+subtitle: Standardbred Canada
+website: https://www.standardbredcanada.ca
+twitter: "@StandardbredCAN"
 start:
   month: Jul
   year: 2018
+end:
 ---
+
 
 Standardbred Canada was nearing the end of their legacy migration to web services, I was brought on to start phasing out the vendor development company. My primary responsiblities were the design and development of the remaining legacy modules from **Basic** to a **Java** (`RESTEasy`/`Tomcat` backed `AngularJS` webapp).
 

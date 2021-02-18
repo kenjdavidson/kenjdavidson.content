@@ -1,12 +1,10 @@
 ---
 type: Timeline
-category: Resume
-subcategory: Experience
-company:
-  name: Trapeze Group
-  website: https://www.trapezegroup.com
-  twitter: "@trapezegroup"
-role: Senior Application Product Specialist
+category: Experience
+title: Senior Application Product Specialist
+subtitle: Trapeze Group
+website: https://www.trapezegroup.com
+twitter: "@trapezegroup"
 start:
   year: 2013
   month: May

@@ -1,8 +1,7 @@
 ---
-type: Section
+type: PageSection
 title: History
 summary: Always a work in progress
-page: Technical Details
 order: 4
 ---
 
@@ -33,8 +32,9 @@ So the added functionality got added in [Lagomier](https://github.com/kenjdavids
 
 Here's an [article](https://www.kenjdavidson.com/writing/2019/05/28/from-wordpress-to-github-pages/) about it.
 
-### Pre 2018 GoDaddy & Wordpress
+### 2018 GoDaddy & Wordpress
 
 My first personal website (we'll leave [Geocities](https://en.wikipedia.org/wiki/Yahoo!_GeoCities) and [MySpace](https://myspace.com/) out of it) was a [Wordpress](https://www.wordpress.com) site hosted on [GoDaddy](https://www.godaddy.ca).   This site was (imagine this) pretty much the same layout this bad boy is now (the sidebar menu with 1/3 split, if that's still what it is); using a theme that I had attempted to build myself using [Bootstrap](https://getbootstrap.com).  My lack of design skills coupled with my distain for **PHP** made it not very pretty, and me not very active.  
 
 I was able to continue to use it while playing around attmepting to grow my enjoyment of **PHP** (which got a little better, but I still wouldn't call it love).  The main project that came out of Wordpress and PHP was my [Yahoo! Fantasy Sports Wordpress](https://github.com/kenjdavidson/yahoo-fantasy-wordpress) plugin.
+

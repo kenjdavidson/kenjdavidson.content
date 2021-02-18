@@ -1,6 +1,6 @@
 ---
 type: Page
-title: Technical Details
+title: Website Details & History
 description: Apparently it's called a `col·o·phon` and it's the thing to do!
 slug: about/website
 ---
