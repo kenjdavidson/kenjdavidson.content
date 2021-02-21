@@ -5,52 +5,54 @@ summary: Language, framework and deployment used for the website
 order: 1
 ---
 
-As mentioned before, this site is (and always will be) a work in progress.  Things will be broken, missing, probably doing some funky things; for which I apologize.
+### Framework
+
+As mentioned before, this site is (and always will be) a work in progress. Things will be broken, missing, probably doing some funky things; for which I apologize.
 
 The current implementation of the site is based upon:
 
 - [Gatsby](https://www.gatsbyjs.com/) and [React](https://reactjs.org/) cause they are awesome and as new to them as I am, I'm hooked.
 - Hosted on [Gitub Pages](https://pages.github.com/) as all great seem to be.
-- Styled using [Grommet](https://v2.grommet.io/), a React based library that (doesn't mesh 100% with Gatsby) provides some unique and useful functionality.  
+- Styled using [Grommet](https://v2.grommet.io/), a React based library that (doesn't mesh 100% with Gatsby) provides some unique and useful functionality.
 
-## Framework
-### Grommet
+#### Grommet
 
-I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site.  There are a few things like:
+I'll be completely honest - it looked cool and I do really like the library. But after getting a little more of it under my belt, I think that it was a bit much for my personal site. There are a few things like:
 
 - Theming
 - Responsiveness (a bigger one)
-- Anchors - which is a massive annoyance.  They don't work well with Gatsby, and require some magic wrapping to convert to `<Link/>` or injected with `navigate(href)` based on whether it's an internal link or not.  Without this, Gatsby becomes un-Gatsby and super annoying.
+- Anchors - which is a massive annoyance. They don't work well with Gatsby, and require some magic wrapping to convert to `<Link/>` or injected with `navigate(href)` based on whether it's an internal link or not. Without this, Gatsby becomes un-Gatsby and super annoying.
 - and some other things
 
 That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
 
-When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`).  We'll see, but at this point the positives don't outweight the negatives.
-### Antd
+When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`). We'll see, but at this point the positives don't outweight the negatives.
 
-With the pain points I've mentioned, I have been researching other frameworks and I will probably try convert [Grommet](https://v2.grommet.io/) to [Antd](https://ant.design/).  It looks like it's got a much richer set of components - which more importantly contain the functionalty that I'm missing and don't particularly want to write myself into Grommet.
+#### Antd
+
+With the pain points I've mentioned, I have been researching other frameworks and I will probably try convert [Grommet](https://v2.grommet.io/) to [Antd](https://ant.design/). It looks like it's got a much richer set of components - which more importantly contain the functionalty that I'm missing and don't particularly want to write myself into Grommet.
 
 The page template definitely isn't that difficult to replicate and I've gotten a working system of:
 
-## Design & planning
+### Design & planning
 
 I've been attempting to categorize the types of `Mdx` created based on the highest level categories:
 
-### Posts
+#### Posts
 
 Single serve `Mdx` files used to create full content articles.
 
-### Timelines
+#### Timelines
 
 Single serve `Mdx` files used for individual education or experience content.
 
-### Pages/Sections
+#### Pages/Sections
 
-Pages and sections provide a consistent and extendable method of describing and building pages externally from the `/src/` which I'm hoping to eventually just use as gatsby plugins.  
+Pages and sections provide a consistent and extendable method of describing and building pages externally from the `/src/` which I'm hoping to eventually just use as gatsby plugins.
 
-## Themes
+### Themes
 
-I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here.   Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
+I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here. Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
 
 - **Cool and Fresh** (4)
 - **Striking and Simple** (12)
@@ -58,21 +60,19 @@ I've been playing around with a few of the [top 50 schemes](https://visme.co/blo
 
 > They don't provide links - so the numerical position in the list is the best I can provide.
 
-## Bitmoji
+### Bitmoji
 
-Yup, [Bitmojis](https://www.bitmoji.com/) are one of my online [guilty pleasures](https://en.wikipedia.org/wiki/Guilty_pleasure).  I'm only somewhat ashamed to admit it!
+Yup, [Bitmojis](https://www.bitmoji.com/) are one of my online [guilty pleasures](https://en.wikipedia.org/wiki/Guilty_pleasure). I'm only somewhat ashamed to admit it!
 
 Don't judge!
 
-## Attribution
+### Attribution
 
-### Fonts
+#### Fonts
 
 Fonts are providd by:
 
-
-
-### Icons
+#### Icons
 
 Icons are provided by:
 
@@ -81,4 +81,3 @@ Icons are provided by:
 - Social Icons made by [Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect) from [Flat Icon](https://www.flaticon.com/).
 
 I'm currently working on getting the Flat Icons wrapped (webpack plugin) within the Grommet `<Blank/>` icon to provide the Grommet theme sizing to them throughout the site.
-
