@@ -10,7 +10,7 @@ There's nothing I love more than just falling down the [rabbit hole](https://www
 - technology
 - golf
 - health & fitness
-- diseases and symptoms (you know you do it)
+- illness and symptoms (you know you do it)
 
 or anything else that might pop into my mind; there are a lot of people who know so much about their respective fields that you can only be in awe of them.
 
