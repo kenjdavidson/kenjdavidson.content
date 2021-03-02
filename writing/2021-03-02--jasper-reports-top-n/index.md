@@ -22,6 +22,7 @@ The report being worked on had a requirement that the **Top N** needed to be dis
 | **3** | 1 | 4 |
 | **3** | 2 | 2 |
 | **1** | 4 | 4 |
+| **0** | 4 | 4 |
 
 the top ranking values are `5, 4, 3, 3` so the report must show 4 people in this instance, not 3.  Generally you'd be able to:
 
@@ -48,6 +49,7 @@ The scriptlet is very primitive, compared to other's I've needed, it really only
 | **3** | 1 | 4 | 1 | 2 |
 | **3** | 2 | 2 | 2 | 2 |
 | **1** | 4 | 4 | 1 | 3 |
+| **0** | 4 | 4 | 1 | 4 |
 
 we can see how the `Group Count` restarts at each group change and how the `Total Count` is summarized (is always a group behind the current row).  So in this case we know that we only want to display data with `$V{TopNCountTotal} < $P{topNumber}`.  Sadly we need to get all the data back in order to do this, but for the time being the data on which we're working isn't that big.
 
@@ -84,3 +86,15 @@ $V{TopNCountTotal} < $P{topNumber}
 ```
 
 - Keep a running total of your group counts only while the `TopNCountTotal` is lower than your `topNumber`.  This way you can display the total in the summary based on how many are actually displayed, and not in the full list.
+
+## Result
+
+We get the table we want with the **Top 3** including Rank():
+
+| Wins | Seconds | Thirds |
+| --- | --- | --- |
+| **5** | 2 | 2 |
+| **4** | 1 | 1 | 
+| **3** | 1 | 4 |
+| **3** | 2 | 2 |
+
