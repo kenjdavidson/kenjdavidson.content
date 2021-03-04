@@ -1,0 +1,153 @@
+- title: Graduated from Ryerson University
+  type: Education
+  date: 2003-04-01
+  institution:
+    - name: Ryerson University
+      url: https://www.ryerson.ca/cs/
+      twitter: '@RyersonU'
+  summary: |
+    Bachelor of Computer Science with honours concentrating on 
+    software design and development, with a sprinkle of networking.
+
+- title: A bunch of contract positions at IBM
+  type: Work
+  date: 2004-10-01
+  summary: |
+    I started out building mail machines for the US Postal Service
+    and ended up doing network support for a couple teams.
+  technology:
+
+- title: Operations Support Specialist
+  type: Work
+  date: 2006-04-01
+  institution:
+    - name: Maple Leaf Foods
+      url: https://www.mapleleaffoods.com/
+      twitter:
+  summary: |
+    A couple of friends got me into Maple Leaf Foods working on the
+    Operations team providing 24/7 support to all facets of
+    the company.
+  technology:
+
+- title: Senior Application Support Specialist
+  type: Work
+  date: 2007-09-01
+  institution:
+    - name: Trapeze Group
+      url: https://www.trapezegroup.com
+      twitter: '@trapezegroup'
+  summary: |
+    I was brought on as the first full time support person on the 
+    Customer Information team (Web, Ivr, Mobile, etc.)
+  technology:
+    - HTML
+    - XML
+    - Soap
+    - GenesysIVR
+
+- title: Switched to the Implementation team
+  type: Work
+  date: 2006-04-01
+  institution:
+    - name: Trapeze Group
+      url: https://www.trapezegroup.com
+      twitter: '@trapezegroup'
+  summary: |
+    The implementation team was growing quickly - my experience with 
+    our customers and software suite was well suited to help with
+    training, designing new software features, etc.
+  technology:
+    - Appcelerator
+    - NodeJS
+
+- title: I liked it, so I put a ring on it (I mean her)
+  type: Life
+  date: 2012-04-14
+  summary: |
+    Sue and I got married a week after her birthday.  I thought it would
+    let me lump the two together for presents... it did not.
+
+- title: Jumped into a Java Developer role
+  type: Work
+  date: 2015-10-01
+  institution:
+    - name: Eyelit Inc.
+      url: https://www.eyelit.com
+      twitter: '@Eyelit_Inc'
+  summary: |
+    Finally made the change into a Java Developer role with Eyelit.
+    I'd been trying to get into the development game for a while, so this
+    was both scary and exciting.
+  technology:
+    - Glassfish
+    - AngularJS
+    - RabbitMQ
+    - Oracle
+    - MSSql
+
+- title: Becoming a father is g/d scary!
+  type: Life
+  date: 2016-07-20
+  summary: |
+    Sue and I aren't shy about how hard it was to get Carson.  My anxiety
+    sure wasn't helpful (ha); maybe I'll get around to writing about it
+    sometime.
+
+- title: Started working through Commercial Web App Certification
+  date: 2015-10-01
+  institution:
+    - name: George Brown CE
+      url: https://coned.georgebrown.ca/courses-and-programs/commercial-web-application-development-program
+      twitter: '@GBCollege'
+  summary: |
+    Started working through the Commercial Web App course.  
+    It wasn't exactly what I thought it would be - extremely basic - 
+    but I'm still hoping to finish at one point.
+
+- title: From manufacturing to horse racing
+  type: Work
+  date: 2018-07-01
+  institution:
+    - name: Standardbred Canada
+      url: https://www.standardbredcanada.com
+      twitter: '@Eyelit_Inc'
+  summary: |
+    I was brought on to help assist with the migration of the legacy
+    (basic) system to a Java based web app.  It's been... interesting,
+    and is almost complete.
+  technology:
+    - Tomcat
+    - Guice
+    - Mybatis
+    - JasperReports
+    - Ingres
+    - Postgres
+
+- title: Released Standardbred Canada mobile app
+  type: Work
+  date: 2019-09-12
+  summary: |
+    Designed, developed and released Standardbred Canada's microchip
+    scanning application.
+  technology:
+    - ReactNative
+    - Java
+    - Swift
+
+- title: React Native Bluetooth Classic
+  type: Project
+  date: 2019-09-12
+  institution:
+    - name: Google Play
+      url: https://play.google.com/store/apps/details?id=com.standardbredmobileapp&hl=en_CA&gl=US
+    - name: Apple Store
+      url: https://apps.apple.com/gb/app/standardbred-canada-mobile/id1476739891
+  summary: |
+    As a result of the mobile project, I re-wrote the React Native 
+    Bluetooth Serial library for use with IOS MFi Protocols.  It's
+    been interesting attempting to maintain a public library.
+  technology:
+    - ReactNative
+    - Bluetooth
+    - MfiProtocols
