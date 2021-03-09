@@ -139,7 +139,7 @@ Bluetooth is a fickle beast.  That combined with React Native makes this library
 
 ### Poorly Openned Issues
 
-I do my best to provide as much information as possible; with regards to bugs, reasoning, etc. and it's painful to see issues getting opened with a line of text saying "<this> just doesn't work".   What I would like to do (and this is super petty of me I know) is to be able to reverse open source some of these things.  
+I do my best to provide as much information as possible; with regards to bugs, reasoning, etc. and it's painful to see issues getting opened with a line of text saying "*SOME ISSUE* just doesn't work".   What I would like to do (and this is super petty of me I know) is to be able to reverse open source some of these things.  
   
 Take the anonimity right out of the process!!
 
