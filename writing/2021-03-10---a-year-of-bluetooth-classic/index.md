@@ -91,7 +91,7 @@ This was actually pretty cool!  These three kids emailed me out of the blue aski
 
 > Hi Mr. Davidson,
 >
-> I'm Ben <redacted>, and I'm a high school student in New Jersey. My team and I are taking an engineering design course this semester, and for our major project we are building a device to help visually-impaired people cross the street. We're doing this with a device rigged with sensors that will send a vibratory alert to a user's phone with a certain app. The device is an Arduino Uno with an HC-05 Bluetooth classic module.
+> I'm Ben *********, and I'm a high school student in New Jersey. My team and I are taking an engineering design course this semester, and for our major project we are building a device to help visually-impaired people cross the street. We're doing this with a device rigged with sensors that will send a vibratory alert to a user's phone with a certain app. The device is an Arduino Uno with an HC-05 Bluetooth classic module.
 > 
 > ...
 
