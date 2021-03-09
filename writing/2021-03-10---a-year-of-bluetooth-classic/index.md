@@ -46,7 +46,7 @@ Moving to promises across the board, also allowed being able to consistently thr
 
 I didn't want to force users into any of these.  Plus if they chose the latter and one of the features was implemented on IOS, there would be no changes needed (which was my goal, unrealized, but a goal never the less).
 
-### Issues and Features
+### Contributors
 
 This is where the *fun?* began, there was a steady influx of issues and feature requests that started coming in, it was an exciting and (equally) aggravating time.  Some solid feature and pull requests came in:
 
@@ -89,11 +89,11 @@ One of the cool things about maintaining this, is that I've been able to help an
 
 This was actually pretty cool!  These three kids emailed me out of the blue asking for help using the library for one of their school projects.  This was the start to an email I received from Ben asking for assistance.
 
-```txt
-Hi Mr. Davidson,
-
-I'm Ben <redacted>, and I'm a high school student in New Jersey. My team and I are taking an engineering design course this semester, and for our major project we are building a device to help visually-impaired people cross the street. We're doing this with a device rigged with sensors that will send a vibratory alert to a user's phone with a certain app. The device is an Arduino Uno with an HC-05 Bluetooth classic module.
-```
+> Hi Mr. Davidson,
+>
+> I'm Ben <redacted>, and I'm a high school student in New Jersey. My team and I are taking an engineering design course this semester, and for our major project we are building a device to help visually-impaired people cross the street. We're doing this with a device rigged with sensors that will send a vibratory alert to a user's phone with a certain app. The device is an Arduino Uno with an HC-05 Bluetooth classic module.
+> 
+> ...
 
 After a couple weeks of communication we were able to:
 
