@@ -257,11 +257,8 @@ and at this point I'm going with option 2. Sorry testing!
 
 After some late night and early morning Googling, I came across a customization of Metro that seems to fit better with my example [https://medium.com/@charpeni/setting-up-an-example-app-for-your-react-native-library-d940c5cf31e4](https://medium.com/@charpeni/setting-up-an-example-app-for-your-react-native-library-d940c5cf31e4) which makes the following changes:
 
-#### Replaces `resolver.extraNodeModules` with `watchFolders`
-
-Which at this point I'm unsure of the differences (will review) but it's worth a shot.
-
-#### Adds in `resolver.blacklist`
+- Replace `resolver.extraNodeModules` with `watchFolders` in the <strong>metro</strong> configuration.
+- Adds in `resolver.blacklist`
 
 Which doesn't even exist on the [Metro config](https://facebook.github.io/metro/docs/configuration/#blocklist) where it's called `resolver.blockList`. The issue here is that it specifically says:
 

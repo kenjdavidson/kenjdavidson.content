@@ -1,12 +1,9 @@
 ---
 type: Timeline
 category: Life
-title: Fatherhood
-subtitle: 
-website: 
-twitter: 
-start:
-  year: 2016
-  month: Jul
-end:
+title: 'Fathering'
+subtitle: Level 1
+website:
+twitter:
+date: 2016-07-20
 ---
