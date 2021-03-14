@@ -1,57 +1,83 @@
 ---
-type: Section
+type: PageSection
 title: Implementation
 summary: Language, framework and deployment used for the website
-page: Technical Details
 order: 1
 ---
 
-As mentioned before, this site is (and always will be) a work in progress.  Things will be broken, missing, probably doing some funky things; for which I apologize.
+### Framework(s)
 
-The current implementation of the site is based upon:
+As mentioned before, this site is (and always will be) a work in progress. Things will be broken, missing, probably doing some funky things; for which I apologize.
 
-- [Gatsby](https://www.gatsbyjs.com/) and [React](https://reactjs.org/) cause they are awesome and as new to them as I am, I'm hooked.
+The current implementation of the site is:
+
+- Developed with [Gatsby](https://www.gatsbyjs.com/) and [React](https://reactjs.org/). I was a hard sell up front, but I'm 100% on board now.
 - Hosted on [Gitub Pages](https://pages.github.com/) as all great seem to be.
-- Styled using [Grommet](https://v2.grommet.io/), a React based library that (doesn't mesh 100% with Gatsby) provides some unique and useful functionality.  
+- Styled using [Styled Components](https://styled-components.com/) - I have flip flopped from using Styled Components, to Grommet, to Antd and now back. I should never have changed to begin with.
 
-### Grommet
-
-I'll be completely honest - it looked cool and I do really like the library.  But after getting a little more of it under my belt, I think that it was a bit much for my personal site.  There are a few things like:
-
-- Theming
-- Responsiveness (a bigger one)
-- Anchors - which is a massive annoyance.  They don't work well with Gatsby, and require some magic wrapping to convert to `<Link/>` or injected with `navigate(href)` based on whether it's an internal link or not.  Without this, Gatsby becomes un-Gatsby and super annoying.
-- and some other things
-
-That I've needed to work around (most likely in not the best way) in order to get things how I prefer them.
-
-When I get a chance, I see myself moving away form Grommet, back to `theme-ui` and regular `styled-components` (or maybe `emotion`).  We'll see, but at this point the positives don't outweight the negatives.
-### Antd
-
-With the pain points I've mentioned, I have been researching other frameworks and I will probably try convert [Grommet](https://v2.grommet.io/) to [Antd](https://ant.design/).  It looks like it's got a much richer set of components - which more importantly contain the functionalty that I'm missing and don't particularly want to write myself into Grommet.
-
-The page template definitely isn't that difficult to replicate and I've gotten a working system of:
-
-### Project Planning
+### Design & planning
 
 I've been attempting to categorize the types of `Mdx` created based on the highest level categories:
 
-#### Posts
+#### Articles
 
-Single serve `Mdx` files used to create full content articles.
+I decided to go with single serve `Mdx` files for publishing. I had originally started with `Md` but figured just having the ability to add components into the posts would be solid.
+
+I'm slowly starting to customize the `components` to provide a little more functionality, I found that event though there are a solid number of plugsin available, they just didn't provide the control I wanted.
 
 #### Timelines
 
-Single serve `Mdx` files used for individual education or experience content.
+I am in the process of converting my resume/experience timeline away from `Mdx` files (one per entry) into a `yaml` data file. The goal here is to add more than just work experience, while providing a better and more easily customized layout.
+
+There are a number of wonderful timeline libs out there, why re-invent the wheel?
 
 #### Pages/Sections
 
-Pages and sections provide a consistent and extendable method of describing and building pages externally from the `/src/` which I'm hoping to eventually just use as gatsby plugins.  
+Pages are where things get hectic, I love the idea of continuing with `Mdx` for the pages, but this limits things somewhat. `JSX` in markdown is pretty solid when the Components are self serving - but when using container components to wrap content, the content is no longer in markdown.
 
-### Themes
+The requirements to have:
 
-I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here.   Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
+- Each page customizable
+- Each pages sections customizable
 
-- 4 `Cool and Fresh`
-- 12 `Striking and Simple`
-- 19 `Minimal Yet Warm`
+The `Mdx` plugin provides a nice way of wrapping each `Mdx` file:
+
+- By using the configuration for templates
+- By exporting a default component type
+
+I feel like this just gives a little more option.
+
+### Bitmoji
+
+Yup, [Bitmojis](https://www.bitmoji.com/) are one of my online [guilty pleasures](https://en.wikipedia.org/wiki/Guilty_pleasure). I'm only somewhat ashamed to admit it!
+
+Don't judge!
+
+### Attribution
+
+The following glorous people/group(s) need to be acknowledge:
+
+#### Colours
+
+I've been playing around with a few of the [top 50 schemes](https://visme.co/blog/website-color-schemes/) published here. Some of them don't work well without the higher end graphics/imagery for which they were designed; but they're fun to play around with.
+
+- **Cool and Fresh** (4)
+- **Striking and Simple** (12)
+- **Minimal Yet Warm** (19)
+
+> They don't provide links - so the numerical position in the list is the best I can provide.
+
+#### Fonts
+
+Fonts are provided by:
+
+- **Merriweather** by [sorkintype.com](https://sorkintype.com)
+- **Playfair Display** by [Claus Eggers Sørensen](github.com/clauseggers/Playfair-Display)
+- **League Script** by [Haley Fiege](https://www.theleagueofmoveabletype.com/)
+
+#### Icons
+
+Icons are provided by:
+
+- Hand Symbol Icons made by [Vitaly Gorbachev](https://www.flaticon.com/authors/vitaly-gorbachev) from [Flat Icon](https://www.flaticon.com/).
+- Social Icons made by [Pixel Perfect](https://www.flaticon.com/authors/pixel-perfect) from [Flat Icon](https://www.flaticon.com/).

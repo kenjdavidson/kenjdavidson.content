@@ -62,11 +62,11 @@ and finally adding the `rn-cli.config.js` configuration:
 // rn-cli.config.js
 module.exports = {
   getTransformModulePath() {
-    return require.resolve("react-native-typescript-transformer");
+    return require.resolve('react-native-typescript-transformer');
   },
   getSourceExts() {
-    return ["ts", "tsx"];
-  }
+    return ['ts', 'tsx'];
+  },
 };
 ```
 
@@ -120,7 +120,7 @@ Now that we've followed that doc, we can go back to the [ts-config/react-native]
 ```javascript
 // babel.config.js
 module.exports = {
-  presets: ["module:metro-react-native-babel-preset"]
+  presets: ['module:metro-react-native-babel-preset'],
 };
 ```
 
@@ -128,23 +128,23 @@ and then we need to modify the Jest configuration:
 
 ```javascript
 // jest.config.js
-const { defaults: tsjPreset } = require("ts-jest/presets");
+const { defaults: tsjPreset } = require('ts-jest/presets');
 
 module.exports = {
   ...tsjPreset,
-  preset: "react-native",
+  preset: 'react-native',
   transform: {
     ...tsjPreset.transform,
-    "\\.js$": "<rootDir>/node_modules/react-native/jest/preprocessor.js"
+    '\\.js$': '<rootDir>/node_modules/react-native/jest/preprocessor.js',
   },
   globals: {
-    "ts-jest": {
-      babelConfig: true
-    }
+    'ts-jest': {
+      babelConfig: true,
+    },
   },
   // This is the only part which you can keep
   // from the above linked tutorial's config:
-  cacheDirectory: ".jest/cache"
+  cacheDirectory: '.jest/cache',
 };
 ```
 
@@ -177,15 +177,15 @@ which makes complete sense. The resulting mock becomes:
 
 ```javascript
 /// __tests__/BluetoothClassicModule.ios.test.js
-import { Platform } from "react-native";
+import { Platform } from 'react-native';
 
-jest.mock("react-native", () => ({
-  Platform: { OS: "ios" }
+jest.mock('react-native', () => ({
+  Platform: { OS: 'ios' },
 }));
 
-describe("React Native Platform", () => {
+describe('React Native Platform', () => {
   test("Platform.OS should be 'ios'", () => {
-    expect(Platform.OS).toBe("ios");
+    expect(Platform.OS).toBe('ios');
   });
 });
 ```
@@ -257,11 +257,8 @@ and at this point I'm going with option 2. Sorry testing!
 
 After some late night and early morning Googling, I came across a customization of Metro that seems to fit better with my example [https://medium.com/@charpeni/setting-up-an-example-app-for-your-react-native-library-d940c5cf31e4](https://medium.com/@charpeni/setting-up-an-example-app-for-your-react-native-library-d940c5cf31e4) which makes the following changes:
 
-#### Replaces `resolver.extraNodeModules` with `watchFolders`
-
-Which at this point I'm unsure of the differences (will review) but it's worth a shot.
-
-#### Adds in `resolver.blacklist`
+- Replace `resolver.extraNodeModules` with `watchFolders` in the <strong>metro</strong> configuration.
+- Adds in `resolver.blacklist`
 
 Which doesn't even exist on the [Metro config](https://facebook.github.io/metro/docs/configuration/#blocklist) where it's called `resolver.blockList`. The issue here is that it specifically says:
 
@@ -269,7 +266,9 @@ Which doesn't even exist on the [Metro config](https://facebook.github.io/metro/
 
 But it's worth a shot!!
 
-### Edit Nov 03 2020
+## Edits
+
+### Nov 03 2020... Kinda
 
 After following the previous posts information, there are still errors that revolve around `lib/node_modules/react-native` being installed. When attempting to run, it's still attempting to load the `react-native` from the `../node_modules` lib folder instead of from the `/example/node_modules/` folder causing all those wonderful duplicate React Native issues.
 
@@ -277,7 +276,7 @@ So at this point, I can write my tests with `react` and `react-native` installed
 
 Since this seems to work for this post (and others) I'm starting to think that the issue is the introduction of Typescript during the build process. But at this point I'd rather keep Typescript (and deal with the [un]installing) rather than go back to plain JavaScript or do the half way kludge of `babel-typescript` at this point.
 
-### Edit Nov 20 2020
+### Nov 20 2020... Kindaer
 
 This edit was a little late, but things are finally working. Using the same `metro-config` above, but changing the strcuture of the projects, I'm able to finally:
 

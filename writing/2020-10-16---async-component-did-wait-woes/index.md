@@ -100,7 +100,7 @@ Now some questions that I have with this, based on how other internal libraries 
 
 Thoughts for later.
 
-#### Issues or Misunderstandings
+## Issues or Misunderstandings
 
 Please, if you come across this and you feel like:
 

@@ -1,18 +1,11 @@
 ---
 type: Timeline
-category: Resume
-subcategory: Experience
-company:
-  name: Trapeze Group
-  website: https://www.trapezegroup.com
-  twitter: "@trapezegroup"
-role: Senior Application Support Specialist
-start:
-  year: 2007
-  month: Sep
-end:
-  year: 2013
-  month: May
+category: Employment
+title: Senior Application Support Specialist
+subtitle: Trapeze Group
+website: https://www.trapezegroup.com
+twitter: '@trapezegroup'
+date: 2007-09-01
 ---
 
 When I started at Trapeze for '03 I was the brought on as the first permanent support role (previously it had been rotated through by the Operations team). The team on which I worked was responsible for supporting the **Web**, **IVR** and all external customer communication software throughout the transit industry.
