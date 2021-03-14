@@ -56,10 +56,6 @@ First thing first I needed to decide upon the layout - this was pretty simple - 
 - Yahoo! Fantasy pages
 - Golf profile/score pages
 
-### Relating Requirements to Gatsby
-
-[TODO]
-
 ### Converting from Jekyll to Gatsby
 
 The conversion from Jekyll to Gatsby was pretty painless. The build process is just as straight forward and the ability to consume markdown files provides a lot more customization that Jekyll had. The one thing that is lacking though, or at least that I relied heavily on during my writing was the `{:.className #idValue}` macro that was available; for example:
