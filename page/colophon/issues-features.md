@@ -1,7 +1,7 @@
 ---
 type: PageSection
 title: Issues & Features
-summary: I accept it will never be perfect
+description: I accept it will never be perfect
 order: 6
 ---
 

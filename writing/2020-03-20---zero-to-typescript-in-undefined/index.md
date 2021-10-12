@@ -2,7 +2,7 @@
 type: Post
 category: Technology
 title: Zero to TypeScript in ... I'll let you know when it's done.
-summary:
+description:
   So I've been disliking Javascript for a while now, I won't lie - but I understand necessity.  Looks like it's time to give
   Typescript a go and try to make the best of it.  Enjoy my suffering.
 tags: [TypeScript, JavaScript, VSCode]

@@ -1,7 +1,7 @@
 ---
 type: Post
 title: Wordpress to Github Pages
-summary:
+description:
   To save a little bit of cash on GoDaddy hosting, as well as get some experience with Github Pages, I took the time move
   (and document the process) of that conversion.
 category: Technology

@@ -1,7 +1,7 @@
 ---
 type: Page
 title: Website Details & History
-summary: Apparently it's called a `col·o·phon` and it's the thing to do!
+description: Apparently it's called a `col·o·phon` and it's the thing to do!
 slug: about/website
 ---
 

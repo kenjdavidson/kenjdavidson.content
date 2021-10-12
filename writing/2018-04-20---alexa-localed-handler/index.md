@@ -1,7 +1,7 @@
 ---
 type: Post
 title: Alexa skill(s) backed by Java Resource(s)
-summary:
+description:
   I wanted to play around with the Alexa Skills Kit to see if I could make a pseudo framework for using Java's built in
   Resource functionality to provide language support.  It didn't go far, but it was a fun process.
 category: Technology

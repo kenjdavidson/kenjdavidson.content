@@ -3,7 +3,7 @@ draft: true
 type: Post
 category: "Year In Review"
 title: The Gongshow that was 2020
-summary: It's been one heck of year!  Continuing in my attempt to document a little bit more about the things I've done (and I guess things I haven't done) it felt like a run down about my last year might be a great kickoff to continuing the process.
+description: It's been one heck of year!  Continuing in my attempt to document a little bit more about the things I've done (and I guess things I haven't done) it felt like a run down about my last year might be a great kickoff to continuing the process.
 tags: [Review, Health, Family, Work]
 ---
 

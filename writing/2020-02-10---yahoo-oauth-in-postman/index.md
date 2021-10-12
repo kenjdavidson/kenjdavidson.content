@@ -3,7 +3,7 @@ type: Post
 category: Technology
 subcategory:
 title: Creating your OAuth2 token for Yahoo APIs within Postman
-summary:
+description:
   If you're intrested in getting/accessing your Yahoo Fantasy leages or teams, making sure you can setup Postman to
   perform testing with your OAuth token will definitely help.  Follow along...
 tags: [Postman, OAuth, Yahoo! Fantasy]

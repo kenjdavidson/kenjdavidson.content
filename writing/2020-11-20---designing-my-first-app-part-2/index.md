@@ -2,7 +2,7 @@
 type: Post
 category: Project
 title: Standardbred Mobile - Framework Selection Process - Part 2
-summary:
+description:
   Continuing along the path to developing and releasing Standardbred Canada's mobile app, part 2 documents the initial creation
   and some of the best practices/libraries that were chosen to help along the way.
 tags: [React Native, Android, IOS]

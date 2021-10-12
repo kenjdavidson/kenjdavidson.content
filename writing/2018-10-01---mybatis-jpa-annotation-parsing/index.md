@@ -3,7 +3,7 @@ type: Post
 category: Technology
 subcategory:
 title: MyBatipse XML Generate ResultSet from JPA Annotations
-summary:
+description:
   My new company, Standardbred Canada, uses Mybatis to manage their Data Access.  After getting used to the environment I found
   I needed a better/faster way to write mapper files.  I was able to throw together a JPA backed mapping plugin for Eclipse.
 tags: [Eclipse, Mybatis, JPA]

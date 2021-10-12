@@ -2,7 +2,7 @@
 type: Post
 category: Project
 title: Standardbred Mobile - Framework Selection Process - Part 1
-summary:
+description:
   Tasked with designing and developing Standardbred Canada's microchip scanning app; I wanted to document the process from
   selecting the appropriate framework to completing development and publishing the application(s).
 tags: [React Native, Android, IOS]

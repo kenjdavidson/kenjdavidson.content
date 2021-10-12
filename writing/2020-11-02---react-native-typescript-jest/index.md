@@ -2,7 +2,7 @@
 type: Post
 category: Technology
 title: Typescript React Native with Jest
-summary:
+description:
   Still going down the Typescript conversion of React Native Bluetooth Classic it was time to get the library setup with
   actual unit testing.  Follow along with another few days of failures and successes.
 tags: [React Native, Typescript, Jest]

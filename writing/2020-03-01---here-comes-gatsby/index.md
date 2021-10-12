@@ -1,7 +1,7 @@
 ---
 type: Post
 title: Goodbye Jekyll, Hello Gatsby!!
-summary:
+description:
   Welp... Jekyll didn't last long.  I know it seems fickle, but after playing around with Jekyll for a while (I just wasn't a fan).
   Check out how I go about, yet another conversion, to Gatsby.
 category: Technology

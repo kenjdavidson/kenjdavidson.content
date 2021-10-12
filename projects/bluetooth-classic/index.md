@@ -1,6 +1,6 @@
 ---
 title: React Native Bluetooth Classic
-summary: Connect to Bluetooth Classic devices on Android and IOS within your React Native app 
+description: Connect to Bluetooth Classic devices on Android and IOS within your React Native app 
 featureImage: ./bluetooth-classic-feature-image.png
 order: 1
 ---

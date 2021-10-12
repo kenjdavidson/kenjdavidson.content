@@ -1,7 +1,7 @@
 ---
 type: Page
 title: "Credit Where Credit's Due"
-summary: Shoutout to those who know substantially more things that me.
+description: Shoutout to those who know substantially more things that me.
 slug: backlinks
 ---
 

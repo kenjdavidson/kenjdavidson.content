@@ -2,7 +2,7 @@
 type: Post
 category: Technology
 title: Pusblish Gatsby with Github Actions
-summary:
+description:
   Since you've taken the time to get your Github Pages site setup with Gatsby, you should probably add automated publishing
   next.  With the help of Github Workflows and Gatsby Publish Action it takes seconds (or a few minutes tops).
 tags: [Gatsby, Github Pages, Github Workflows]

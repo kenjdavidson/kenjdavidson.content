@@ -2,7 +2,7 @@
 type: Post
 category: Technology
 title: Simulating TOP N / RANK() with Jasper Reports
-summary: Ran into an issue where I needed to simulate TOP N / RANK() with Jasper Reports
+description: Ran into an issue where I needed to simulate TOP N / RANK() with Jasper Reports
 tags: [Jasper Reports, Java, Scriptlets]
 ---
 

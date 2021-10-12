@@ -2,7 +2,7 @@
 type: Post
 category: Technology
 title: A year of Bluetooth Classic Maintenence
-summary: It's been a cool (albeit annoying at times) experience to maintain my first real project.
+description: It's been a cool (albeit annoying at times) experience to maintain my first real project.
 tags: [React Native, Bluetooth, Open Source]
 ---
 

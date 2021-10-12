@@ -2,7 +2,7 @@
 type: Post
 category: Technology
 title: Indellient Software Analyst Interview Project
-summary:
+description:
   When applying for a role developer/analyst role at Indellient Software, part of the application process was to write
   a documenting explaining my analysis and review of my favorite software, for discussion during the interview.
 tags: [Interview, Software Analysis]

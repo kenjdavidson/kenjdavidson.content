@@ -2,7 +2,7 @@
 type: Post
 category: Random
 title: "What's Open on my Chrome Tabs Right Now"
-summary: I've been told I always have too many tabs open, but I say they have too few!
+description: I've been told I always have too many tabs open, but I say they have too few!
 tags: [Technology, Lifestyle, Golfing]
 ---
 

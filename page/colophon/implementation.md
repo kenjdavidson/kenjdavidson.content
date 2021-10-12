@@ -1,7 +1,7 @@
 ---
 type: PageSection
 title: Implementation
-summary: Language, framework and deployment used for the website
+description: Language, framework and deployment used for the website
 order: 1
 ---
 

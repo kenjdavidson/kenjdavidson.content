@@ -1,7 +1,7 @@
 ---
 type: PageSection
 title: History
-summary: Always a work in progress
+description: Always a work in progress
 order: 4
 ---
 
