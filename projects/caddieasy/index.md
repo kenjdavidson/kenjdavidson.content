@@ -1,8 +1,9 @@
 ---
-title: Caddieasy
+title: "Caddieasy"
 description: Manage and play the game your way!
 order: 2
 draft: true
+slug: "/projects/caddieasy"
 ---
 
 I love golf; but I've been falling out of love with my [Garmin Approach S4](https://www.fitbit.com/global/no/products/smartwatches/ionic). It may not have helped that since I got my [Fitbit Ionic](https://www.fitbit.com/global/no/products/smartwatches/ionic) I haven't taken it off. The one missing feature on the Fitbit is the lack of Golf app!
