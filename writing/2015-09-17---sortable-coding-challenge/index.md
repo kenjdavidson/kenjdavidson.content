@@ -1,5 +1,5 @@
 ---
-title: "Sortable Coding Challenge"
+title: Sortable Coding Challenge
 description:
   A long time ago I was looking to get out of support and into a development role.  At this point I had education
   and some extra curricular development on my side - turned out to be quite the learning experience.
