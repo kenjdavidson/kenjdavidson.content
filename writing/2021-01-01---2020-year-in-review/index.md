@@ -1,10 +1,11 @@
 ---
 draft: true
-type: Post
-category: "Year In Review"
-title: The Gongshow that was 2020
-summary: It's been one heck of year!  Continuing in my attempt to document a little bit more about the things I've done (and I guess things I haven't done) it felt like a run down about my last year might be a great kickoff to continuing the process.
+title: "The Gongshow that was 2020"
+description: 
+  It's been one heck of year!  Continuing in my attempt to document a little bit more about the things I've done (and I guess things I haven't done) it felt like a run down about my last year might be a great kickoff to continuing the process.
+date: 2021-01-01
 tags: [Review, Health, Family, Work]
+slug: "/2020/01/01/year-in-review"
 ---
 
 So let's be serious, 2020 was a completes S@#% show! (I think we can all agree that throwning down a little profanity is justified)

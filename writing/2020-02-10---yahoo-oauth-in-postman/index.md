@@ -1,12 +1,11 @@
 ---
-type: Post
-category: Technology
-subcategory:
-title: Creating your OAuth2 token for Yahoo APIs within Postman
-summary:
+title: "Creating your OAuth2 token for Yahoo APIs within Postman"
+description:
   If you're intrested in getting/accessing your Yahoo Fantasy leages or teams, making sure you can setup Postman to
   perform testing with your OAuth token will definitely help.  Follow along...
+date: 2020-02-10
 tags: [Postman, OAuth, Yahoo! Fantasy]
+slug: "/2020/02/10/yahoo-oauth-in-postman"
 ---
 
 I love playing around with the Yahoo Fantasy Sports APIs. In the past I wrote the a [PHP library](https://github.com/kenjdavidson/php-oauth-yahoofantasysports) and [Wordpress plugin](https://github.com/kenjdavidson/yahoo-fantasy-wordpress) which worked wonders, but I recently wanted to start on an updated library (Java/Javascript I haven't decided) in order to provide myself with some added features that I've been wanting for a while. The first step was getting back to understanding the APIs, it'd been a few years since the PHP library and I wanted to just test out a few things - the PHP code was hacky as not my native language - so that I could improve upon the old library.

@@ -1,9 +1,9 @@
 ---
-type: Post
-category: Technology
-title: A year of Bluetooth Classic Maintenence
-summary: It's been a cool (albeit annoying at times) experience to maintain my first real project.
+title: "A year of Bluetooth Classic Maintenence"
+description: It's been a cool (albeit annoying at times) experience to maintain my first real project.
+date: 2021-03-10
 tags: [React Native, Bluetooth, Open Source]
+slug: "/2021/03/10/a-year-of-bluetooth-classic"
 ---
 
 So it's actually probably been longer than a year, but if we just go back to when I started/released `v1.60.x-rcY` it's close enough. When I was first re-implementing [react-native-bluetooth-serial](https://www.npmjs.com/package/react-native-bluetooth-serial) I thought it would be for my own copmanies app; I was not planning nor ready to start maintaining something that would be used all over the world.

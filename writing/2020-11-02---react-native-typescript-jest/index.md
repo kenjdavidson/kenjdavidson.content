@@ -1,11 +1,11 @@
 ---
-type: Post
-category: Technology
-title: Typescript React Native with Jest
-summary:
+title: "Typescript React Native with Jest"
+description:
   Still going down the Typescript conversion of React Native Bluetooth Classic it was time to get the library setup with
   actual unit testing.  Follow along with another few days of failures and successes.
+date: 2020-11-02
 tags: [React Native, Typescript, Jest]
+slug: "/2020/11/02/react-native-typescript-jest
 ---
 
 So I've been slowly converting [react-native-bluetooth-classic](https://kenjdavidson.com/react-native-bluetooth-classic) to Typescript, which went off fairly well, and decided it would be a good idea to start adding tests. Figured it would get me some experience working with [Jest](https://jestjs.io/) and getting a better product available for everyone.

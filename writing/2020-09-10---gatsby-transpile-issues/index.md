@@ -1,11 +1,10 @@
 ---
-type: Post
-category: Technology
-title: No exports main resolved ... @babel/helper-compilation-targets/package.json
-summary:
-  Looks like the latest version of Node broke my Gatsby Publish Action.   It's a good thing Google and Stack Overflow exist
-  and made life substantially easier than it could have been.
+title: "No exports main resolved ... @babel/helper-compilation-targets/package.json"
+description:
+  Looks like the latest version of Node broke my Gatsby Publish Action.   It's a good thing Google and Stack Overflow exist and made life substantially easier than it could have been.
+date: 2020-09-10
 tags: [Gatsby, Node, Github Actions]
+slug: "/2020/09/10/babel-no-exports-main-resolved"
 ---
 
 After the recent version of Node was released my Gatsby (as well as others) stopped building on Github. To keep my site up to date (or at least up to date as it can be - I don't post a lot) I use a wonderful Github Action to publish - [enriikke/gatsby-gh-pages-action@v2](https://github.com/enriikke/gatsby-gh-pages-action).

@@ -1,11 +1,10 @@
 ---
-type: Post
-category: Technology
-title: Zero to TypeScript in ... I'll let you know when it's done.
-summary:
-  So I've been disliking Javascript for a while now, I won't lie - but I understand necessity.  Looks like it's time to give
-  Typescript a go and try to make the best of it.  Enjoy my suffering.
+title: "Zero to TypeScript in ... I'll let you know when it's done."
+description:
+  So I've been disliking Javascript for a while now, I won't lie - but I understand necessity.  Looks like it's time to give Typescript a go and try to make the best of it.  Enjoy my suffering.
+date: 2020-03-20
 tags: [TypeScript, JavaScript, VSCode]
+slug: "/2020/03/20/zero-to-typescript-in-undefined"
 ---
 
 I know what you're thinking...

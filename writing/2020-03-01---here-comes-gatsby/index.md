@@ -1,11 +1,10 @@
 ---
-type: Post
-title: Goodbye Jekyll, Hello Gatsby!!
-summary:
-  Welp... Jekyll didn't last long.  I know it seems fickle, but after playing around with Jekyll for a while (I just wasn't a fan).
-  Check out how I go about, yet another conversion, to Gatsby.
-category: Technology
+title: "Goodbye Jekyll, Hello Gatsby!!"
+description:
+  Welp... Jekyll didn't last long.  I know it seems fickle, but after playing around with Jekyll for a while (I just wasn't a fan). Check out how I go about, yet another conversion, to Gatsby.
+date: 2020-03-01
 tags: [Gatsby, React]
+slug: "/2020/03/01/here-comes-gatsby"
 ---
 
 A few months ago I decided that I was going to cancel my hosting with <a href="https://www.godaddy.com">Go Daddy</a> in an attempt to save on some expenses. I've been a Github member for a while now, although I hadn't started using it to it's (near full) potential until a few years back. While looking for alternatives I came across <a href="https://pages.github.com/">Github Pages</a> which had the two major benefits of being <strong>free</strong> and <strong>documented</strong>.

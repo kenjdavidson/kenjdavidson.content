@@ -1,7 +1,7 @@
 ---
 type: PageSection
 title: Programming, Dev-Ops, and anything Technology
-summary: These sites, blogs, tutorials have gotten me out of (and probably into) some tough jams with work and personal projects.
+description: These sites, blogs, tutorials have gotten me out of (and probably into) some tough jams with work and personal projects.
 order: 1
 ---
 

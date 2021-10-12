@@ -1,11 +1,10 @@
 ---
-type: Post
-title: For my first IOS project, why not start with Streams!
-summary:
-  While developting my companies mobile application I needed to write a custom library for IOS to allow Bluetooth Classic scanning.
-  Why not jump directly into Swift streams as my first (ever) IOS project.  What could go wrong?
-category: Technology
+title: "For my first IOS project, why not start with Streams!"
+description:
+  While developting my companies mobile application I needed to write a custom library for IOS to allow Bluetooth Classic scanning. Why not jump directly into Swift streams as my first (ever) IOS project.  What could go wrong?
+date: 2019-06-02
 tags: [Swift, React Native]
+slug: "/2019/06/02/my-foray-into-swift-streams"
 ---
 
 While working on the library [react-native-bluetooth-classic](https://github.com/kenjdavidson/react-native-bluetooth-classic) I got my first taste of Swift Streams through the [ExternalAccessory](https://developer.apple.com/documentation/externalaccessory) framework. Since I've worked with streams in Java a number of times I thought this would be as straight forward, although not as straight forward, once I grasped the concept it finished itself pretty quickly.

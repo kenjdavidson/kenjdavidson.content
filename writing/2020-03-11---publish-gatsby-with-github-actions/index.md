@@ -1,11 +1,10 @@
 ---
-type: Post
-category: Technology
-title: Pusblish Gatsby with Github Actions
-summary:
-  Since you've taken the time to get your Github Pages site setup with Gatsby, you should probably add automated publishing
-  next.  With the help of Github Workflows and Gatsby Publish Action it takes seconds (or a few minutes tops).
+title: "Pusblish Gatsby with Github Actions"
+description:
+  Since you've taken the time to get your Github Pages site setup with Gatsby, you should probably add automated publishing next.  With the help of Github Workflows and Gatsby Publish Action it takes seconds (or a few minutes tops).
+date: 2020-03-11
 tags: [Gatsby, Github Pages, Github Workflows]
+slug: "/2020/03/11/publish-gatsby-with-github-actions"
 ---
 
 Now that I've got things rolling with my [Gatsby conversion](/writing/2020/03/01/here-comes-gatsby) and everything seems good working with Github Pages, it was time to automate the build/release process. What a great chance to start playing with a little Github Actions (Yup, I know this stuff is old - but it's still new to me!). Right off the bat, my two priorties are to:

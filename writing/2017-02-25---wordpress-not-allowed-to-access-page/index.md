@@ -1,9 +1,10 @@
 ---
-type: Post
-title: Android RecyclerView. Adapter implements Filterable
-summary: A quick little walk through of how I added filter functionality to my Wingapedia app using Android's RecyclerView.Adapter and Filterable.
-category: Technology
+title: "Android RecyclerView. Adapter implements Filterable"
+description: 
+  A quick little walk through of how I added filter functionality to my Wingapedia app using Android's RecyclerView.Adapter and Filterable.
+date: 2017-02-25
 tags: [Java, Android]
+slug: "/2017/02/25/wordpress-not-allowed-to-access-page"
 ---
 
 While working with the `RecyclerView.Adapter` while building my Wingapedia Android app I needed to write a custom filter. Essentially I had two groupings of flavours and temperatures (I have to admit, now that I look back I definitely did some things wrong when designing this, but that's for another post) which I wanted to use to filter the items in the list.

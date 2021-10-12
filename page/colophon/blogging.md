@@ -1,7 +1,7 @@
 ---
 type: PageSection
 title: Blogging in General
-summary: Some people are born to blog.. I am not one of them.
+description: Some people are born to blog.. I am not one of them.
 order: 5
 ---
 

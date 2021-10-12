@@ -1,11 +1,11 @@
 ---
-type: Post
-title: Sortable Coding Challenge
-summary:
+title: "Sortable Coding Challenge"
+description:
   A long time ago I was looking to get out of support and into a development role.  At this point I had education
   and some extra curricular development on my side - turned out to be quite the learning experience.
-category: Technology
+date: 2015-09-17
 tags: [Java, Employment]
+slug: "/2015/09/17/sortable-coding-challenge"
 ---
 
 When I was attempting to make the switch from application support/implementation to a completely development based role - which was shockingly harder than I had planned - I started coming across a number of coding challenge requirements on company sites. I was directed to the [Sortable Challenge](https://sortable.com/coding-challenge/) by my cousin who was trying to convince me that Cambridge/Kitchener was the place to be (regardless of the crazy commute). The only language I really had any experience with at the time was Java, which was good since that was one of the languages they were looking for on the original posting.

@@ -1,6 +1,6 @@
 ---
 title: Caddieasy
-summary: Manage and play the game your way!
+description: Manage and play the game your way!
 order: 2
 draft: true
 ---

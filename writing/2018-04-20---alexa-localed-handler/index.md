@@ -1,11 +1,11 @@
 ---
-type: Post
-title: Alexa skill(s) backed by Java Resource(s)
-summary:
+title: "Alexa skill(s) backed by Java Resource(s)"
+description:
   I wanted to play around with the Alexa Skills Kit to see if I could make a pseudo framework for using Java's built in
   Resource functionality to provide language support.  It didn't go far, but it was a fun process.
-category: Technology
+date: 2018-04-20
 tags: [Java, Alexa]
+slug: "/2018/10/01/alexa-localed-handler"
 ---
 
 I wanted to start playing around with Alexa skills, I had a view ideas but no experience and needed a good starting place. Figured I’d hit two birds with one stone by creating a base skill handler to take advantage of some common features across all the skills that I wanted to work towards. I know that Alexa works with locales and I wanted my skills to be available across the board; or to be extendable easily for others.

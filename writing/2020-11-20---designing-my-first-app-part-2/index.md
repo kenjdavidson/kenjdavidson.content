@@ -1,11 +1,10 @@
 ---
-type: Post
-category: Project
-title: Standardbred Mobile - Framework Selection Process - Part 2
-summary:
-  Continuing along the path to developing and releasing Standardbred Canada's mobile app, part 2 documents the initial creation
-  and some of the best practices/libraries that were chosen to help along the way.
+title: "Standardbred Mobile - Framework Selection Process - Part 2"
+description:
+  Continuing along the path to developing and releasing Standardbred Canada's mobile app, part 2 documents the initial creation and some of the best practices/libraries that were chosen to help along the way.
+date: 2020-11-20
 tags: [React Native, Android, IOS]
+slug: "/2020/11/20/designing-my-first-app-part-2
 series:
   title: Designing My First React Native App
   order: 2

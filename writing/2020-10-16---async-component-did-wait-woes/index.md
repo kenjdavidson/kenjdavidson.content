@@ -1,11 +1,10 @@
 ---
-type: Post
-category: Technology
-title: await and componentDidMount woes
-summary:
-  While converting React Native Bluetooth Classic to Typescript I ran into some issues with componentDidMount and await.
-  A couple evenings down of trying to figure out componentDidMount being blocked and a resolution was found.
+title: "await and componentDidMount woes"
+description:
+  While converting React Native Bluetooth Classic to Typescript I ran into some issues with componentDidMount and await. A couple evenings down of trying to figure out componentDidMount being blocked and a resolution was found.
+date: 2020-10-16
 tags: [React Native, Node, Javascript]
+slug: "/2020/10/16/async-component-did-wait-woes"
 ---
 
 First let me preface this by stating I'm not the biggest fan of Javascript. Don't get me wrong, I don't hate it, I'm just used to doing things in a ways that don't translate well to JS. This is probably a case of

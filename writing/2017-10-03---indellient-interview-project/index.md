@@ -1,11 +1,10 @@
 ---
-type: Post
-category: Technology
-title: Indellient Software Analyst Interview Project
-summary:
-  When applying for a role developer/analyst role at Indellient Software, part of the application process was to write
-  a documenting explaining my analysis and review of my favorite software, for discussion during the interview.
-tags: [Interview, Software Analysis]
+title: "Indellient Software Analyst Interview Project"
+description:
+  When applying for a role developer/analyst role at Indellient Software, part of the application process was to write a documenting explaining my analysis and review of my favorite software, for discussion during the interview.
+date: 2017-10-03
+tags: [Interview, Software Analysis, Design]
+slug: "/2017/10/03/indellient-interview-project"
 ---
 
 I had applied for a software developer role at [Indellient](https://www.indellient.com/), when I was invited in for an interview it was actually for two roles: Developer and Business Analyst. As part of the interview I was asked to write a design/analysis document about one of my "favorite/most used" pieces of software.

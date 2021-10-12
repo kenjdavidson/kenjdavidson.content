@@ -1,9 +1,9 @@
 ---
-type: Post
-category: Random
 title: "What's Open on my Chrome Tabs Right Now"
-summary: I've been told I always have too many tabs open, but I say they have too few!
+description: I've been told I always have too many tabs open, but I say they have too few!
+date: 2021-03-13
 tags: [Technology, Lifestyle, Golfing]
+slug: "/2021/03/13/chrome-browser-tabs"
 ---
 
 It seems like it's a popular thing to write about how many and which books people have been reading, but recently I read a post by [Chris Coyier](https://chriscoyier.net/) about some of the recent blog posts he's read recently. On top of the fact that everyone should be reading his articles, it was super interesting to read that a guy, a who's who in the industry, is still reading and learning from others. It kind of made me question:
