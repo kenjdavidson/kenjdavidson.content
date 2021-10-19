@@ -1,4 +1,5 @@
 ---
 title: "Heyoh!"
-slug: "/about-me"
+slug: "/about"
 ---
+

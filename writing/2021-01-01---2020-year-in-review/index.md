@@ -73,8 +73,6 @@ Although I continued to refrain from:
 - Breads
 - Most other sugar
 
-![2020 Weight Loss](./weight-loss.png "From 205 down to 180 and holding strong")
-
 I'm currently sitting around **180**, and I'm thrilled about it! (Don't mind the unfinished shower).  I'm going to try to get a couple posts regarding the different exercise programs I've given a shot, their pros and cons, etc.
 
 ## Family
