@@ -1,5 +1,0 @@
----
-title: "Heyoh!"
-slug: "/about"
----
-
