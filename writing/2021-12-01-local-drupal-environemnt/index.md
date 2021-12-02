@@ -144,7 +144,7 @@ It looks like the vendor followed some standard of best practices (from looking 
 - Wasn't locked to specific versions
 - Had some dependencies in `dev` version
 
-Both of which had issues of their own and was something tha coming from a Maven background just boggled my mind.  It resulted in different versions being on different installs for different developers and provide with a week or so long of attempting to find out why the dev dependencies were missing (which now looking back seems so obvious), but you can read about it here [https://drupal.stackexchange.com/questions/302666/trait-drupal-entity-form-entityduplicateformtrait-not-found-while-setting-up/302959#302959](https://drupal.stackexchange.com/questions/302666/trait-drupal-entity-form-entityduplicateformtrait-not-found-while-setting-up/302959#302959).
+Both of which had issues of their own and was something that coming from a Maven background just boggled my mind.  It resulted in different versions being on different installs for different developers and provide with a week or so long of attempting to find out why the dev dependencies were missing (which now looking back seems so obvious), but you can read about it here [https://drupal.stackexchange.com/questions/302666/trait-drupal-entity-form-entityduplicateformtrait-not-found-while-setting-up/302959#302959](https://drupal.stackexchange.com/questions/302666/trait-drupal-entity-form-entityduplicateformtrait-not-found-while-setting-up/302959#302959).
 
 TLDR; manually delete all `dev` version dependencies before running `composer install` so that they can be checked out as git submodules correctly.
 
