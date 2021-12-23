@@ -6,11 +6,9 @@ tags: [Technology, PHP, Drupal 8]
 slug: "/2021/12/01/getting-drupal-8-up-and-running"
 ---
 
-> First off, just let me say that I'm not the biggest fan of PHP - something about it just doesn't fit right for me.  Which made this task even more difficult!  So if something is up with this or I've made some poor decisions or poorer executions please let me know.
-
 So, we recently got a vendor (which won't be named here due to how absolutely terrible they are) to migrate our Drupal 6 site to Drupal 8.  Given that I literally knew (and probably still don't) anything about Drupal I assumed it would be a fairly straigh forward process.  I've worked with and as a vendor before, I get how things go - the games you play trying to milk more mony out of clients.
 
-> First of all it's a super shady (borderline assholish) practice that I couldn't stand then - when I was working for a vendor providing great service - it's even worse now working with a terrible vendor providing terrible service.
+> It's a super shady practice that I couldn't stand when we attempted to do it to some clients; which makes having to deal with it on the flip side flat out annoying.
 
 Due to the lack of knowledge and training that we got transferred to us in terms of development environments, I was tasked with getting things setup myself.  Since I generally try not to do things half assed I decided to jump all in and get everything I could think of setup.
 
