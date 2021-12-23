@@ -94,7 +94,7 @@ Fire up the `Content Type Builder` and start adding data elements related to a g
 - Email
 - Phone
 
-![Facility Content Type Building](./caddieasy-golf-facility-model.PNG)
+![Facility Content Type Building](./caddieasy-golf-facility-model.png)
 
 Save this and you'll see that Strapi is restarting.  This is intersting, mainly because Strapi (like other CMS which I wasn't aware of) keep the schemas within files in the project, and not managed directly against the database.
 
@@ -108,7 +108,7 @@ Now we'll add the basics of a course - obviously this could get crazy (and proba
 - Facility (many to one reference)
 - Location (lng, lat, alt, zoom)
 
-![Course Content Type Building](./caddieasy-golf-course-model.PNG)
+![Course Content Type Building](./caddieasy-golf-course-model.png)
 
 One of the cool things, when you add the `Relation` it's automatically included on the **Golf Facility** content type as well.
 
@@ -689,5 +689,5 @@ return strapi.registerPlugin(plugin);
 
 which should now result in our Course location being editable via a map:
 
-![Course Editor with GeoPoint](./caddieasy-golf-course-edit.PNG)
+![Course Editor with GeoPoint](./caddieasy-golf-course-edit.png)
 
