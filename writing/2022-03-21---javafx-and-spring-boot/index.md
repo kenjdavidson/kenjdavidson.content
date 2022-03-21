@@ -117,6 +117,12 @@ Once the devcontainer is started, you'll be able to login to _http://localhost:6
 
 ### Controller/Service Layer(s)
 
+### Issues
+
+One of the main issues that I ran into while getting this project going was the inability to use `fx:root` to build the FXML components.  There are a few ways around this that I found online, while JavaFX allows you to set the `FXMLLoader#setControlllerFactory` and `FXMLLoader#setBuilderFactory` to the `context::getBean` this will result in two separate version of the class (ie. Not the same instance of Controller being the root).  This can be worked around by using `singleton` scope for your highest level components (application scene, etc) but that also has limitations (only a single window available, which might work for the majority of applications).
+
+The better way to get around this is only using `fx:root` for your reusable components, which shouldn't need access to the Spring context anyhow.
+
 ## Web App / Running as Service
 
 The cool thing about backing JavaFX with Spring Boot is that if you'd like to run the application as a service, you have the option of quickly adding some Web Controllers and modifying the Spring Boot startup so that instead of running the JavaFX `Application` it runs the Web `Application`.  
