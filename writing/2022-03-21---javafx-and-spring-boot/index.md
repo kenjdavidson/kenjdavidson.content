@@ -111,6 +111,8 @@ Once the devcontainer is started, you'll be able to login to _http://localhost:6
 
 ## JavaFX with Spring Boot
 
+![GS Pro Connect JavaFX](gspro-connect-vnc.png)
+
 ### Two Applications with One Stone
 
 ### Controller/Service Layer(s)
