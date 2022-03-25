@@ -111,11 +111,57 @@ Once the devcontainer is started, you'll be able to login to _http://localhost:6
 
 ## JavaFX with Spring Boot
 
+The connect application provides a standardized `GS Pro Connector` interface and the ability to choose from a number of installed `LaunchMonitor`(s) using the `LaunchMonitorProvider` interface.  By default there is only the `FormLaunchMonitor` installed, but these are easy to implement and add to the application by placing the compiled JAR in the class path.
+
 ![GS Pro Connect JavaFX](gspro-connect-vnc.png)
 
-### Two Applications with One Stone
+### Two Applications/One Stone
 
-### Controller/Service Layer(s)
+One of the major issues run into across the web is getting the Spring Boot `Application` to play nicely with the JavaFX `Application`.  There are a number of great tutorials on this:
+
+Following a combination of these tutorials the resulting `Application` classes look like this:
+
+**Spring Boot**
+```
+
+```
+
+**JavaFX**
+
+### Controllers (FXML)
+
+The FXML controllers are implemented through the `#setControllerFactory` providing the `applicationContext::getBean` method.  Controllers are setup as `prototype` scope, although this causes more issues down stream seeing as the application only has 1 instance of each, things would have been easier if left as `singleton`.  Each Controller has it's applicable service injected appropriately.
+
+> Stolen from another project the `ViewManager` provides the direct management of loading FXML views.
+
+```
+public <T> T load(String view, Stage stage) throws IOException {
+  String resource = validateViewPath(view);
+  FXMLLoader loader = new FXMLLoader(getClass().getResource(resource), ResourceBundle.getBundle("i18n"));
+        
+  loader.setControllerFactory(applicationContext::getBean);
+
+  // Need to find a way to make an fxml scope so that controller and builder will return the same
+  // controller from the context, instead of needing the controller to be a singleton (bad) or 
+  // having two different instances of the same class (also bad); since all examples for use of
+  // fx:root use #setRoot(this); #setController(this); when performing the load.
+  //loader.setBuilderFactory(builderFactory);
+        
+  T parent = loader.load();  
+
+  if (loader.getController() instanceof StageAware) {
+    ((StageAware)loader.getController()).setStage(stage);
+  }
+
+  return parent;
+}
+```
+
+> This could have been more easily done with [FXWeaver](https://github.com/rgielen/javafx-weaver), which is on the todo list for implementation.  It still doesn't help resolve the `fx:root` issue though.
+
+### Services
+
+
 
 ### Issues
 
