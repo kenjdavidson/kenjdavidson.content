@@ -14,6 +14,8 @@ Time to throw my hat into the ring with a **JavaFX and Spring Boot** article.  T
 
 > As always, feel free to add some comments or push me in the right direction if you've come across this and see that I'm going in the completely wrong way.
 
+> The project (in all it's glory) can be found at [https://github.com/kenjdavidson/gspro-connector](https://github.com/kenjdavidson/gspro-connector)
+
 ## Project Details
 
 If it's not apparent, I love golf.  Which means in the winter I love virtual golf.  The last winter I've been playing [E6 Connect](https://e6golf.com/) using the [SLX Micro Simulator](https://www.swinglogic.us/slx) and it's gotten me by.  Although now that the primary game that I've been playing has disallowed the SLX Micro Sim, I figured I'd see if I could give [GS Pro](https://gsprogolf.com/) a shot; it seems to have substantially better reviews in terms of graphics and game play, just not internal simulator support.
@@ -122,15 +124,67 @@ One of the major issues run into across the web is getting the Spring Boot `Appl
 Following a combination of these tutorials the resulting `Application` classes look like this:
 
 **Spring Boot**
-```
+
+The `@SpringBootApplication` launches the `GsProConnectApplication` (FX Application) during the boot process:
 
 ```
+@SpringBootApplication
+public class GsProConnectApplicationBoot {
+  public static void main(String[] args) {
+      Application.launch(GsProConnectApplication.class, args);
+  }
+}
+```
 
-**JavaFX**
+**JavaFX Application**
+
+The Java FX `Application` peforms a couple key functions:
+
+```
+  /**
+   * Starts the application and fires off an `ApplicationStartupEvent` (which is responsible for building
+   * the primary stage) and displaying it.
+   */
+  @Override
+  public void start(Stage stage) throws Exception {
+      logger.debug("Starting GsProConnectApplication");
+
+      applicationContext.publishEvent(new ApplicationStartupEvent(this, stage));
+  }
+
+  /**
+   * Initialize is responsible for completing the configuration of the `ApplicationContext`.  During this process
+   * a number of additional beans are applied using the `initializers()`:
+   */
+  @Override
+  public void init() {
+      logger.debug("Initializing Spring ApplicationContext");
+
+      applicationContext = new SpringApplicationBuilder(GsProConnectApplicationBoot.class)
+          .sources(GsProConnectApplicationBoot.class)
+          .initializers(initializers())
+          .run(getParameters().getRaw().toArray(new String[0]));
+  }
+
+  /**
+   * Return an `ApplicationContextInitializer` which provides some of the specific JavaFX application
+   * related beans: `Application`, `Parameters` and `HostServices`.  This allows `Controller`(s) to 
+   * be injected with application related items. 
+   *
+   * For example `HostServices` would allow a controller access to disk, etc.
+   */
+  ApplicationContextInitializer<GenericApplicationContext> initializers() { 
+        return ac -> {
+            ac.registerBean(Application.class, () -> GsProConnectApplication.this);
+            ac.registerBean(Parameters.class, this::getParameters);
+            ac.registerBean(HostServices.class, this::getHostServices);
+        };
+    }
+```
 
 ### Controllers (FXML)
 
-The FXML controllers are implemented through the `#setControllerFactory` providing the `applicationContext::getBean` method.  Controllers are setup as `prototype` scope, although this causes more issues down stream seeing as the application only has 1 instance of each, things would have been easier if left as `singleton`.  Each Controller has it's applicable service injected appropriately.
+The FXML controllers are implemented through the `#setControllerFactory` providing the `applicationContext::getBean` method.  Controllers are setup as `prototype` scope; this isn't really required (based on your application) but just be aware that if you are working with `singleton` controllers and attempting to display multiple Views you're run into issues.
 
 > Stolen from another project the `ViewManager` provides the direct management of loading FXML views.
 
@@ -157,17 +211,33 @@ public <T> T load(String view, Stage stage) throws IOException {
 }
 ```
 
-> This could have been more easily done with [FXWeaver](https://github.com/rgielen/javafx-weaver), which is on the todo list for implementation.  It still doesn't help resolve the `fx:root` issue though.
+> This could have been more easily done with [FXWeaver](https://github.com/rgielen/javafx-weaver), which is on the todo list for implementation.
 
 ### Services
 
-
+Services are designed pretty much how they would be normally.
 
 ### Issues
 
 One of the main issues that I ran into while getting this project going was the inability to use `fx:root` to build the FXML components.  There are a few ways around this that I found online, while JavaFX allows you to set the `FXMLLoader#setControlllerFactory` and `FXMLLoader#setBuilderFactory` to the `context::getBean` this will result in two separate version of the class (ie. Not the same instance of Controller being the root).  This can be worked around by using `singleton` scope for your highest level components (application scene, etc) but that also has limitations (only a single window available, which might work for the majority of applications).
 
-The better way to get around this is only using `fx:root` for your reusable components, which shouldn't need access to the Spring context anyhow.
+As long as you're following a pretty standard structure of:
+
+- `singleton` Service(s) which are pretty standard
+- `prototype` View Controllers which get injected with singleton services 
+- `fx:root` Which are just display Views (no injected services) 
+
+```
+@Scope('prototype')
+public class Controller {
+  @Inject DataService dataService;
+  
+  void buildList() {
+    // MyCustomList created with `fx:root` extending the ListView
+    ListView list = new MyCustomList(dataService.getItems());
+  }
+}
+```
 
 ## Web App / Running as Service
 
@@ -175,4 +245,8 @@ The cool thing about backing JavaFX with Spring Boot is that if you'd like to ru
 
 ### Updating the Spring Boot Application
 
+> Check out one of the next articles
+
 ### Starting the Application in Service Mode
+
+> Check out one of the next articles
