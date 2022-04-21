@@ -1,7 +1,7 @@
 ---
 title: "Java FX and Spring Boot playground"
 description: Started playing around with JavaFX (again), backed by Spring Boot.  Seems interesting....
-date: 2021-12-01
+date: 2022-03-21
 tags: [Technology, Java, JavaFX, Spring Boot]
 slug: "/2022/03/21/javafx-and-spring-boot"
 ---
