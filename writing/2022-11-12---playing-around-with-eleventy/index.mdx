@@ -1,0 +1,89 @@
+---
+title: Playing Around with Eleventy
+description:
+  Taking a stab at another static site generator.  Eleventy (11ty) was a refreshingly simple SSG that was up and running in a couple days.
+date: 2022-11-12
+tags: [Eleventy, TypeScript, Tailwind, Stimulus]
+slug: "/2033/11/12/playing-around-with-eleventy"
+---
+
+# Eleventy - yet another static site generator
+
+So I've been toying with the idea of creating a web app for an NFL pool that I'm in.  The guy that runs the pool is fantastic, but he's shot down all my attempts automating the process for him; in all honesty I respect him holding on.  Since he isn't interested in a full application, all that I needed was a way to manage/view the Excel files he sends on a weekly basis - this opened the door to combining a static site generator with github pages (thanks to githubs `schedule` action trigger).
+
+First off let's look at why I chose Elventy (11ty) for this:
+
+- Jimbo (the owner) had no interest in automating the process, which mean I only had to deal with Excel files he sent bi-weekly
+- The only automation was converting his Excel documents into HTML pages (with a sprinkle of Javascript)
+- I had zero interest in adding in the requirement of dealing with `GraphQL`; mainly due to my experience being limited and not wanting to spend the majority of my time on managing data.
+
+Obviously there was a bunch of reading involved.  I've said this before, and I'll most likely say it agian; when you're not a genius (I don't deny what i am) you need to make this up by being able to reverse design (engineer is such a bad term) and read a substantial amount of documentation and code.  So let's jumpt in to what I needed:
+
+## Requirements
+
+When I was reviewing options, I needed to:
+
+### Github Pages Support
+
+Taking advantage of `Github Pages` (being cheap and all) was a huge requirement.   Github pages is free (even though I'm a subscriber) and provide an inexpensive way for pages to be made available to the public.  Since [kenjdavidson.com](https://kenjdavidson.com) is already published to Github Pages, it made sense to continue
+
+### Custom Data
+
+I needed the ability to parse custom Excel files into data to be available on the site.  When looking at the different options:
+
+- Gatsby requires `GraphQL` for custom data.  Since all my GraphQL experience is solely theoretical, this didn't seem like a realistic choice to managing custom data.
+- Other SSG frameworks allow access to `api` content, but not from static files.
+
+Eleventy's ability to convert static files (xlsx) into manageable JSON content seemed like the best choice.   Eleventy manages this data in a `cascade`, which is really just a fancy way of saying priority.  If you're used to the way that Spring Boot processes `application.properties` this shouldn't be a shock.
+
+## Jimbos NFL Pools
+
+If you've ever been in a pool, one of the best parts is talking trash while the games are going on.  In order to do this, you need to know who's actually doing well (and who's doing poorly - hahah generally it's me).  The goals of this project are:
+
+- Show a page containing the current standings
+- Show a page containing the current week picks (picks, points, etc).
+- show a page for each player showing there season picks (by week)
+
+A pretty simple idea, let's see how it happened:
+
+> If you're interesting is the finally project, you can see the source at [https://github.com/kenjdavidson/jimbos-nfl-pool](https://github.com/kenjdavidson/jimbos-nfl-pool) or the final result at [https://kenjdavidson.com/jimbos-nfl-pool](https://kenjdavidson.com/jimbos-nfl-pool).
+
+### Eleventy (11ty)
+
+First off, I've got to comment about how much I hate '11ty'.  Like why?  I get that `Eleven` = `11` + `ty` but this seems like even more ridiculous of. short form as `i18n` or `k8s` (which both drive me crazy).  But, this is an old man story for another time.
+
+Secondly, the site is super annoying.  The **tutorials** are just links to articles and videos that I really don't want deal with.  The documents [cli](https://www.11ty.dev/docs/usage/) page had the most information to get things started, it was pretty straight forward:
+
+- Create an NPM project
+- `npm i -d @11ty/eleventy`
+
+which works ok for the basic site.  While setting this up, I went with the following folder stucture:
+
+```
+jimbos-nfl-pools
+|- content    # Eleventy files
+|- src        # Javascript/Typescript files
+\- styles     # CSS files
+```
+
+#### Content
+
+I chose to go with (most of the tutorials used) Nunjucks as the template library.  Not much really to say here, just that you'll need to have the [Nunjucks](https://mozilla.github.io/nunjucks/) docs site ready to go.  The site is pretty simple:
+
+- `layout.njk` provides the standard layout
+- `players.njk` provides the player pages
+- `spread_pool.njk` provides the weekly pools
+
+##### Excel Data
+
+##### Players
+
+##### Spread Pool
+
+#### Styles
+
+I know this is the third (sorting) folder in the list; but as a live site it was important that there was some style.  I'm not a designer, which means I'm ok with pages looking a little less **amazing** if they flow and work well.   I also love libraries/frameworks that have a pretty decent community and a good number of pre-designed components.   I fully acknowledge that I'm a developer, not a designer.  For no other reason than that I've been using it more and more often, I decided to go with [tailwindcss](https://tailwindcss.com/).
+
+Setting up Tailwind was pretty straight forward.  Since this project is a static site, it made sense to use the `tailwind` cli.  
+
+#### JavaScript
