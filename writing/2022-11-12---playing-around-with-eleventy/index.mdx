@@ -36,13 +36,15 @@ I needed the ability to parse custom Excel files into data to be available on th
 
 Eleventy's ability to convert static files (xlsx) into manageable JSON content seemed like the best choice.   Eleventy manages this data in a `cascade`, which is really just a fancy way of saying priority.  If you're used to the way that Spring Boot processes `application.properties` this shouldn't be a shock.
 
-## Jimbos NFL Pools
+## Jimbos NFL Pool
 
-If you've ever been in a pool, one of the best parts is talking trash while the games are going on.  In order to do this, you need to know who's actually doing well (and who's doing poorly - hahah generally it's me).  The goals of this project are:
+![Jimbos NLF Pool](https://user-images.githubusercontent.com/6210735/201553383-bfa27344-60eb-4511-850d-42b69091146d.png)
 
-- Show a page containing the current standings
-- Show a page containing the current week picks (picks, points, etc).
-- show a page for each player showing there season picks (by week)
+Jimbo runs a great pool, but he's old school and maintains pool picks/data in Excel instead of using one of the many third party sites.  When Sunday rolls around we're always attempting to do the calculations to determine who is in the lead, what needs to happen for which results.   I tried to get Jimbo into the present (without luck) so the next best thing was to just work with what he's providing (Excel) and provide the results.  The important parts are:
+
+- showing a page containing the current standings
+- showing a page containing the current week picks (picks, points, etc).
+- showing a page for each player showing there season picks (by week) - this is more of a nice to have, but it was pretty straight forward.
 
 A pretty simple idea, let's see how it happened:
 
@@ -68,22 +70,169 @@ jimbos-nfl-pools
 
 #### Content
 
-I chose to go with (most of the tutorials used) Nunjucks as the template library.  Not much really to say here, just that you'll need to have the [Nunjucks](https://mozilla.github.io/nunjucks/) docs site ready to go.  The site is pretty simple:
+I chose to go with (most of the tutorials used) Nunjucks as the template engine.  Not much really to say here, just that you'll need to have the [Nunjucks](https://mozilla.github.io/nunjucks/) docs site ready to go.  The eleventy folder structure is pretty simple:
 
-- `layout.njk` provides the standard layout
-- `players.njk` provides the player pages
-- `spread_pool.njk` provides the weekly pools
+```
+jimbos-nfl-pools
+|- content     # Eleventy files
+  |- _data     # Stores the Excel files
+  |- _includes 
+     \- layout.njk
+  |- index.njk
+  |- spread_pools.njk
+  \- players.njk
+```
 
-##### Excel Data
+##### Data
 
-##### Players
+As mentioned, the data files are Excel documents which contain:
 
-##### Spread Pool
+- Week details
+- Player picks
+- Weekly games with spreads
+- Pool standings (accumulated)
+
+Since Eleventy provides some solid data processing, the only thing that was needed was adding the custom processor.  This is configured through the `eleventyConfig` api:
+
+```js=.eleventy.js
+  eleventyConfig.addDataExtension("xlsx", {
+    parser: parseSpreadPoolFile(eleventyConfig),
+    read: false
+  });
+```
+
+Which configures the following:
+
+- Whenever you see an `xlsx` file use the `parseSpreadPoolFile` (function provided by)
+- This file should not be read, but instead passed to the processor by `filename`
+
+> The processing code is available in the [project repository](https://github.com/kenjdavidson/jimbos-nfl-pool).  But essentially it just takes the sections processed above, and creates the data object.
+
+##### Collections
+
+Once we've got the data processed it will be available to to our pages using the `data` api.  This data is not available through the `collections` (and therefore not available for `pagination` - this means a separate page would be required for each item (not cool).  This means that all the data objects need to be massaged into a couple of collections:
+
+The two collections needed to match my requirements are: `spread_pools` and `players`, again using the `eleventyConfig` api:
+
+```js=.eleventy.js
+  // Collection
+  eleventyConfig.addCollection("spread_pool", spreadPoolsCollection);
+  eleventyConfig.addCollection("players", playersCollection);
+```
+
+In this case we need to reduce all the spread pool file data into a single collection:
+
+```js=spread-pool-collection.js
+module.exports = function (collectionsApi) {
+  const data = collectionsApi.getAll()[0].data;
+  return Object.entries(data)
+    .filter(([k, v]) => "spread_pool" === v.type)
+    .map(([k, v]) => ({
+      ...v,
+      name: k,
+    }));
+};
+```
+
+The players collection is a little more intense, as it performs some processing of all the `spread_pool` (weekly data) and merges/reduces the game results and standings with the weekly player picks.
 
 #### Styles
 
 I know this is the third (sorting) folder in the list; but as a live site it was important that there was some style.  I'm not a designer, which means I'm ok with pages looking a little less **amazing** if they flow and work well.   I also love libraries/frameworks that have a pretty decent community and a good number of pre-designed components.   I fully acknowledge that I'm a developer, not a designer.  For no other reason than that I've been using it more and more often, I decided to go with [tailwindcss](https://tailwindcss.com/).
 
-Setting up Tailwind was pretty straight forward.  Since this project is a static site, it made sense to use the `tailwind` cli.  
+Setting up Tailwind was pretty straight forward.  Since this project is a static site, it made sense to use the `tailwind` cli.
+
+```
+jimbos-nfl-pools
+|- css
+  \- styles.css
+\- tailwind.config.js
+```
+
+At this point there is only a single `styles.css` file which does all the tailwind goodness:
+
+```css=styles.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// add some custom layer base/components
+```
 
 #### JavaScript
+
+I've been using [@hotwired/stimulus](https://stimulus.hotwired.dev/) in my more recent projects, so I figured I'd keep the ball rolling in this one.  Stimulus has Typescript support through `webpack` which is how I decided get things setup.  This gives me the option of keeping the javascript and css separate or eventually join them together at some point.
+
+The project structure for javascript is:
+
+```
+jimbos-nfl-pools
+|- src
+  |- controllers
+  \- stimulus.ts
+|- tsconfig.json
+|- webpack.config.js
+```
+
+### Package.json
+
+To get everything running nicely, `package.json` provides the following scripts:
+
+```js=package.json
+"scripts": {
+    ...
+    "dev": "run-p dev:*",
+    "dev:11ty": "eleventy --serve --watch",
+    "dev:css": "tailwindcss -i ./css/styles.css -o ./_site/styles.css --watch",
+    "dev:webpack": "webpack --watch",
+    "build": "NODE_ENV=production npm-run-all clean build:*",
+    "build:11ty": "eleventy --pathprefix=jimbos-nfl-pool",
+    "build:css": "tailwindcss -i ./css/styles.css -o ./_site/styles.css --minify",
+    "build:webpack": "webpack",
+    ...
+}
+```
+
+> `npm run dev` gets things going!!
+
+## Deploying to Github Pages
+
+Like all other static site generators, Eleventy works well with Github Pages; which is how I decided to publish the site.  There are two main issues related to deployment that still need to be addressed:
+
+### Data File Updates
+
+This one I haven't dealt with yet, but in order to deploy a new week the Excel file needs to be uploaded to the project.  The files are emailed out at this point (and as I mentioned Jimbo has no interest in changing this):
+
+- Manually upload the file
+- Pull the email/file from my email at the beginning of the week
+
+> Future Ken's problems
+
+### Deploying Updates
+
+At this point the site is completely static - which means all the game results are updated only when the site is generated (and deployed).  Github actions provide the ability to fire deployments on `schedule` using cron expressions.  The most annoying part of this was converting `EST` to `UTC`.  The following section of the configuration provides generation on:
+
+- manual request
+- push to main
+- on schedule attempting to match the end/beginning of each game group
+
+```yml=build-and-release.yml
+name: Build and Release
+run-name: ${{ github.actor }} is releasing new spread pool results
+on:
+  workflow_dispatch:    
+  push:
+    branches: 
+      - main
+  schedule:
+    # Thursday 11:45pm = Friday 4:45am
+    # Sunday 11:45am, 3:45pm = Sunday 4:45pm, 8:45pm
+    # Sunday 7:45pm, 11:45pm = Monday 12:45, 4:45am
+    # Monday 11:45pm = Tuesday 4:45am
+    - cron: '45 0,4 * * 1,2,5'
+    - cron: '45 16,20 * * 0'
+```
+
+> I'll slowly start adding in `Stimulus` controllers to handle the updates between deployments (things like in game updates and live leaderboard).
+
+
